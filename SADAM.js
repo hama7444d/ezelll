@@ -18,8 +18,7 @@ const config = require("./SADAM.json");
 const prefix = config.prefix;
 /////////////////// {DAST LERA MADA }////////////////////////
 
-
-const client  = new Discord.client();
+//const client1 = new Discord.client();
 const client2 = new Discord.Client();
 const client3 = new Discord.Client();
 const client4 = new Discord.Client();
@@ -30,7 +29,7 @@ const client8 = new Discord.Client();
 const client9 = new Discord.Client();
 const client10 = new Discord.Client();
 const client11 = new Discord.Client();
-const client12 = new Discord.client();
+//const client12 = new Discord.client();
 const client13 = new Discord.Client();
 const client14 = new Discord.Client();
 const client15 = new Discord.Client();
@@ -38,7 +37,7 @@ const client16 = new Discord.Client();
 const client17 = new Discord.Client();
 const client18 = new Discord.Client();
 const client19 = new Discord.Client();
-const client20 = new Discord.client();
+//const client20 = new Discord.client();
 const client21 = new Discord.Client();
 const client22 = new Discord.Client();
 const client23 = new Discord.Client();
@@ -138,46 +137,18 @@ const err = `** \`\`\`  [ERORR] : لازم تسوي رتبة بـ اسم  \`\`\`
 // ======= [ settings JSON   ] ======== //
 const dinfo = JSON.parse(fs.readFileSync("./SADAM1.json", "UTF8"));
 
-client.on("message", async message => {
-  if (message.content === prefix + "reset") {
-    if (!dinfo.owner.includes(message.author.id)) return; // جمــيع الحقوق محفوظة لدي "Kahrbaa"
-    dinfo.serverid = "NONE";
-    dinfo.channelid = "NONE";
-    dinfo.timespam = "NONE"; // جمــيع الحقوق محفوظة لدي "Kahrbaa"
-    dinfo.timestop = "NONE";
-    message.channel.send(`**⚠️ restsettings , <@${dinfo.owner}>**`);
-    fs.writeFile("./data.json", JSON.stringify(dinfo), function(a) {
-      if (a) throw a;
-    });
-    await cmd.run("refresh"); // جمــيع الحقوق محفوظة لدي "Kahrbaa"
-  }
-});
+
 
 // ======= [ settings JSON - END   ] ======== //
 
 // جمــيع الحقوق محفوظة لدي "Kahrbaa"
 // ======= [ Reload JSON   ] ======== //
-client.on("message", async message => {
-  if (message.author.id !== dinfo.owner) return;
-  if (message.content === config.prefix + "reload") {
-    await cmd.run("refresh");
-    await message.channel.send("Done,");
-  }
-});
-
 
 
 // ==== [مهم جدااا ] ==== //
 const KahDEV = require("request");
 const invitecode = config.invite;
-client.on("ready", () => {
-  console.log(`[BOT] ${client.user.username} Ready!`);
-  KahDEV({
-    method: "POST",
-    url: "https://discordapp.com/api/v6/invite/" + invitecode,
-    headers: { authorization: process.env.KahTOKEN }
-  });
-});
+
 
 client2.on("ready", () => {
   console.log(`[BOT] ${client2.user.username} Ready!`);
@@ -269,14 +240,7 @@ client11.on("ready", () => {
   });
 });
 
-client12.on("ready", () => {
-  console.log(`[BOT] ${client12.user.username} Ready!`);
-  KahDEV({
-    method: "POST",
-    url: "https://discordapp.com/api/v6/invite/" + invitecode,
-    headers: { authorization: process.env.KahTOKEN12 }
-  });
-});
+
 
 client13.on("ready", () => {
   console.log(`[BOT] ${client13.user.username} Ready!`);
@@ -341,25 +305,10 @@ client19.on("ready", () => {
   });
 });
 
-client20.on("ready", () => {
-  console.log(`[BOT] ${client20.user.username} Ready!`);
-  KahDEV({
-    method: "POST",
-    url: "https://discordapp.com/api/v6/invite/" + invitecode,
-    headers: { authorization: process.env.KahTOKEN20 }
-  });
-});
+
 // DONE //
 // ======= [ Console LOG - END   ] ======== //
 
-client.on("message", message => {
-  if (!dinfo.owner.includes(message.author.id)) return;
-  if (message.content.toLowerCase() === config.prefix + "help") {
-    message.delete(5000);
-    if (!message.channel.guild) return;
-    message.channel.send(help);
-  }
-});
 
 
 
@@ -369,14 +318,14 @@ client.on("message", message => {
 
 
 // ======= [ MODE - Join Server , add Friend   ] ======== //
-client.on("message", async message => {
-  if (!dinfo.owner.includes(message.author.id)) return;
-  if (message.content.startsWith(config.prefix + "friend")) {
-    await addFriend(message.content.split(" ").slice(1)[0], message);
-  } else if (message.content.startsWith(config.prefix + "join")) {
-    joinServer(message.content.split(" ").slice(1)[0], message);
-  } else return null;
-});
+//client1.on("message", async message => {
+//  if (!dinfo.owner.includes(message.author.id)) return;
+ // if (message.content.startsWith(config.prefix + "friend")) {
+   // await addFriend(message.content.split(" ").slice(1)[0], message);
+ // } else if (message.content.startsWith(config.prefix + "join")) {
+  //  joinServer(message.content.split(" ").slice(1)[0], message);
+ // } else return null;
+//});
 
 client2.on("message", async message => {
   if (!dinfo.owner.includes(message.author.id)) return;
@@ -459,14 +408,7 @@ client11.on("message", async message => {
   } else return null;
 });
 
-client12.on("message", async message => {
-  if (!dinfo.owner.includes(message.author.id)) return;
-  if (message.content.startsWith(config.prefix + "friend")) {
-    await addFriend(message.content.split(" ").slice(1)[0], message);
-  } else if (message.content.startsWith(config.prefix + "join")) {
-    joinServer(message.content.split(" ").slice(1)[0], message);
-  } else return null;
-});
+
 client13.on("message", async message => {
   if (!dinfo.owner.includes(message.author.id)) return;
   if (message.content.startsWith(config.prefix + "friend")) {
@@ -523,14 +465,7 @@ client19.on("message", async message => {
     joinServer(message.content.split(" ").slice(1)[0], message);
   } else return null;
 });
-client20.on("message", async message => {
-  if (!dinfo.owner.includes(message.author.id)) return;
-  if (message.content.startsWith(config.prefix + "friend")) {
-    await addFriend(message.content.split(" ").slice(1)[0], message);
-  } else if (message.content.startsWith(config.prefix + "join")) {
-    joinServer(message.content.split(" ").slice(1)[0], message);
-  } else return null;
-});
+
 
 ///////::////
 
@@ -1186,7 +1121,7 @@ client98.on("message", async message => {
     joinServer(message.content.split(" ").slice(1)[0], message);
   } else return null;
 });
-client19.on("message", async message => {
+client99.on("message", async message => {
   if (!dinfo.owner.includes(message.author.id)) return;
   if (message.content.startsWith(config.prefix + "friend")) {
     await addFriend(message.content.split(" ").slice(1)[0], message);
@@ -1194,176 +1129,7 @@ client19.on("message", async message => {
     joinServer(message.content.split(" ").slice(1)[0], message);
   } else return null;
 });
-client20.on("message", async message => {
-  if (!dinfo.owner.includes(message.author.id)) return;
-  if (message.content.startsWith(config.prefix + "friend")) {
-    await addFriend(message.content.split(" ").slice(1)[0], message);
-  } else if (message.content.startsWith(config.prefix + "join")) {
-    joinServer(message.content.split(" ").slice(1)[0], message);
-  } else return null;
-});
-
-
-
-
-
-client16.on("message", async message => {
-  if (!dinfo.owner.includes(message.author.id)) return;
-  if (message.content.startsWith(config.prefix + "friend")) {
-    await addFriend(message.content.split(" ").slice(1)[0], message);
-  } else if (message.content.startsWith(config.prefix + "join")) {
-    joinServer(message.content.split(" ").slice(1)[0], message);
-  } else return null;
-});
-client17.on("message", async message => {
-  if (!dinfo.owner.includes(message.author.id)) return;
-  if (message.content.startsWith(config.prefix + "friend")) {
-    await addFriend(message.content.split(" ").slice(1)[0], message);
-  } else if (message.content.startsWith(config.prefix + "join")) {
-    joinServer(message.content.split(" ").slice(1)[0], message);
-  } else return null;
-});
-client18.on("message", async message => {
-  if (!dinfo.owner.includes(message.author.id)) return;
-  if (message.content.startsWith(config.prefix + "friend")) {
-    await addFriend(message.content.split(" ").slice(1)[0], message);
-  } else if (message.content.startsWith(config.prefix + "join")) {
-    joinServer(message.content.split(" ").slice(1)[0], message);
-  } else return null;
-});
-client19.on("message", async message => {
-  if (!dinfo.owner.includes(message.author.id)) return;
-  if (message.content.startsWith(config.prefix + "friend")) {
-    await addFriend(message.content.split(" ").slice(1)[0], message);
-  } else if (message.content.startsWith(config.prefix + "join")) {
-    joinServer(message.content.split(" ").slice(1)[0], message);
-  } else return null;
-});
-client20.on("message", async message => {
-  if (!dinfo.owner.includes(message.author.id)) return;
-  if (message.content.startsWith(config.prefix + "friend")) {
-    await addFriend(message.content.split(" ").slice(1)[0], message);
-  } else if (message.content.startsWith(config.prefix + "join")) {
-    joinServer(message.content.split(" ").slice(1)[0], message);
-  } else return null;
-});
-
-client16.on("message", async message => {
-  if (!dinfo.owner.includes(message.author.id)) return;
-  if (message.content.startsWith(config.prefix + "friend")) {
-    await addFriend(message.content.split(" ").slice(1)[0], message);
-  } else if (message.content.startsWith(config.prefix + "join")) {
-    joinServer(message.content.split(" ").slice(1)[0], message);
-  } else return null;
-});
-client17.on("message", async message => {
-  if (!dinfo.owner.includes(message.author.id)) return;
-  if (message.content.startsWith(config.prefix + "friend")) {
-    await addFriend(message.content.split(" ").slice(1)[0], message);
-  } else if (message.content.startsWith(config.prefix + "join")) {
-    joinServer(message.content.split(" ").slice(1)[0], message);
-  } else return null;
-});
-client18.on("message", async message => {
-  if (!dinfo.owner.includes(message.author.id)) return;
-  if (message.content.startsWith(config.prefix + "friend")) {
-    await addFriend(message.content.split(" ").slice(1)[0], message);
-  } else if (message.content.startsWith(config.prefix + "join")) {
-    joinServer(message.content.split(" ").slice(1)[0], message);
-  } else return null;
-});
-client19.on("message", async message => {
-  if (!dinfo.owner.includes(message.author.id)) return;
-  if (message.content.startsWith(config.prefix + "friend")) {
-    await addFriend(message.content.split(" ").slice(1)[0], message);
-  } else if (message.content.startsWith(config.prefix + "join")) {
-    joinServer(message.content.split(" ").slice(1)[0], message);
-  } else return null;
-});
-client20.on("message", async message => {
-  if (!dinfo.owner.includes(message.author.id)) return;
-  if (message.content.startsWith(config.prefix + "friend")) {
-    await addFriend(message.content.split(" ").slice(1)[0], message);
-  } else if (message.content.startsWith(config.prefix + "join")) {
-    joinServer(message.content.split(" ").slice(1)[0], message);
-  } else return null;
-});
-
-client16.on("message", async message => {
-  if (!dinfo.owner.includes(message.author.id)) return;
-  if (message.content.startsWith(config.prefix + "friend")) {
-    await addFriend(message.content.split(" ").slice(1)[0], message);
-  } else if (message.content.startsWith(config.prefix + "join")) {
-    joinServer(message.content.split(" ").slice(1)[0], message);
-  } else return null;
-});
-client17.on("message", async message => {
-  if (!dinfo.owner.includes(message.author.id)) return;
-  if (message.content.startsWith(config.prefix + "friend")) {
-    await addFriend(message.content.split(" ").slice(1)[0], message);
-  } else if (message.content.startsWith(config.prefix + "join")) {
-    joinServer(message.content.split(" ").slice(1)[0], message);
-  } else return null;
-});
-client18.on("message", async message => {
-  if (!dinfo.owner.includes(message.author.id)) return;
-  if (message.content.startsWith(config.prefix + "friend")) {
-    await addFriend(message.content.split(" ").slice(1)[0], message);
-  } else if (message.content.startsWith(config.prefix + "join")) {
-    joinServer(message.content.split(" ").slice(1)[0], message);
-  } else return null;
-});
-client19.on("message", async message => {
-  if (!dinfo.owner.includes(message.author.id)) return;
-  if (message.content.startsWith(config.prefix + "friend")) {
-    await addFriend(message.content.split(" ").slice(1)[0], message);
-  } else if (message.content.startsWith(config.prefix + "join")) {
-    joinServer(message.content.split(" ").slice(1)[0], message);
-  } else return null;
-});
-client20.on("message", async message => {
-  if (!dinfo.owner.includes(message.author.id)) return;
-  if (message.content.startsWith(config.prefix + "friend")) {
-    await addFriend(message.content.split(" ").slice(1)[0], message);
-  } else if (message.content.startsWith(config.prefix + "join")) {
-    joinServer(message.content.split(" ").slice(1)[0], message);
-  } else return null;
-});
-
-
-client16.on("message", async message => {
-  if (!dinfo.owner.includes(message.author.id)) return;
-  if (message.content.startsWith(config.prefix + "friend")) {
-    await addFriend(message.content.split(" ").slice(1)[0], message);
-  } else if (message.content.startsWith(config.prefix + "join")) {
-    joinServer(message.content.split(" ").slice(1)[0], message);
-  } else return null;
-});
-client17.on("message", async message => {
-  if (!dinfo.owner.includes(message.author.id)) return;
-  if (message.content.startsWith(config.prefix + "friend")) {
-    await addFriend(message.content.split(" ").slice(1)[0], message);
-  } else if (message.content.startsWith(config.prefix + "join")) {
-    joinServer(message.content.split(" ").slice(1)[0], message);
-  } else return null;
-});
-client18.on("message", async message => {
-  if (!dinfo.owner.includes(message.author.id)) return;
-  if (message.content.startsWith(config.prefix + "friend")) {
-    await addFriend(message.content.split(" ").slice(1)[0], message);
-  } else if (message.content.startsWith(config.prefix + "join")) {
-    joinServer(message.content.split(" ").slice(1)[0], message);
-  } else return null;
-});
-client19.on("message", async message => {
-  if (!dinfo.owner.includes(message.author.id)) return;
-  if (message.content.startsWith(config.prefix + "friend")) {
-    await addFriend(message.content.split(" ").slice(1)[0], message);
-  } else if (message.content.startsWith(config.prefix + "join")) {
-    joinServer(message.content.split(" ").slice(1)[0], message);
-  } else return null;
-});
-client20.on("message", async message => {
+client100.on("message", async message => {
   if (!dinfo.owner.includes(message.author.id)) return;
   if (message.content.startsWith(config.prefix + "friend")) {
     await addFriend(message.content.split(" ").slice(1)[0], message);
@@ -1375,85 +1141,85 @@ client20.on("message", async message => {
 // ======= [ MODE - Join Server , add Friend END  ] ======== //
 
 // ======= [ MODE - React MSG  ] ======== //
-client.on("message", async message => {
-  if (message.content.startsWith(prefix + "react")) {
-    if (!dinfo.owner.includes(message.author.id)) return;
-    let args = message.content.split(" ").slice(1);
-    console.log(
-      args
-        .slice(2)
-        .join(" ")
-        .replace(/\<|\>/g, "")
-        .split(":")
-    );
-    if (!args[0])
-      return message.channel.send(
-        " Error : ``" + prefix + "react <ChannelID> <MessageID> <Emoji>``"
-      );
-    if (args[0].length > 18 || args[0].length <= 17) {
-      return message.channel
-        .send(" Error : ``تاكد من ايدي الروم``")
-        .then(message => message.delete(4000));
-    }
-    if (isNaN(args[0])) return message.channel.send("**__الارقام فقط__!**");
-    if (!args[1])
-      return message.channel
-        .send(
-          " Error : ``" + prefix + "react <ChannelID> <MessageID> <Emoji>``"
-        )
-        .then(message => message.delete(4000));
-    if (args[1].length > 18 || args[1].length <= 17) {
-      return message.channel
-        .send(" Error : ``تاكد من ايدي الرسالة``")
-        .then(message => message.delete(4000));
-    }
-    if (isNaN(args[1])) return message.channel.send("**__الارقام فقط__!**");
-    if (!args[2])
-      return message.channel
-        .send(
-          " Error : ``" + prefix + "react <ChannelID> <MessageID> <Emoji>``"
-        )
-        .then(message => message.delete(4000));
-    let channel = await message.guild.channels.get(args[0]);
-    if (!channel) return;
-    let msg = await channel.fetchMessage(args[1]);
-    if (!msg) return;
-    if (!args.slice(2)) return;
-    if (
-      args
-        .slice(2)
-        .join(" ")
-        .replace(/\<|\>/g, "")
-        .split(":")[2] &&
-      args
-        .slice(2)
-        .join(" ")
-        .replace(/\<|\>/g, "")
-        .split(":")[2].length == 18
-    ) {
-      try {
-        await msg.react(
-          client.emojis.get(
-            args
-              .slice(2)
-              .join(" ")
-              .replace(/\<|\>/g, "")
-              .split(":")[2]
-          )
-        );
-      } catch (e) {
-        return;
-      }
-    } else {
-      try {
-        await msg.react(args[2]);
-        await message.reply(`**تم وضع ايموجي بنجاااح ! **`);
-      } catch (e) {
-        return;
-      }
-    }
-  }
-});
+//client.on("message", async message => {
+//  if (message.content.startsWith(prefix + "react")) {
+ ///   if (!dinfo.owner.includes(message.author.id)) return;
+ //   let args = message.content.split(" ").slice(1);
+  //  console.log(
+  //    args
+  //      .slice(2)
+   //     .join(" ")
+  //      .replace(/\<|\>/g, "")
+ //       .split(":")
+ //   );
+  //  if (!args[0])
+  //    return message.channel.send(
+   //     " Error : ``" + prefix + "react <ChannelID> <MessageID> <Emoji>``"
+ //     );
+ //   if (args[0].length > 18 || args[0].length <= 17) {
+  //    return message.channel
+   //     .send(" Error : ``تاكد من ايدي الروم``")
+  //      .then(message => message.delete(4000));
+ ///   }
+ //   if (isNaN(args[0])) return message.channel.send("**__الارقام فقط__!**");
+  //  if (!args[1])
+  //    return message.channel
+   ////     .send(
+    //      " Error : ``" + prefix + "react <ChannelID> <MessageID> <Emoji>``"
+    //    )
+   //     .then(message => message.delete(4000));
+  ///  if (args[1].length > 18 || args[1].length <= 17) {
+  ///    return message.channel
+   ///     .send(" Error : ``تاكد من ايدي الرسالة``")
+ ////       .then(message => message.delete(4000));
+  ///  }
+  ///  if (isNaN(args[1])) return message.channel.send("**__الارقام فقط__!**");
+ //   if (!args[2])
+  ///    return message.channel
+ ////       .send(
+ ////         " Error : ``" + prefix + "react <ChannelID> <MessageID> <Emoji>``"
+ ///       )
+  ////      .then(message => message.delete(4000));
+ ///   let channel = await message.guild.channels.get(args[0]);
+// ////   if (!channel) return;
+//:://    let msg = await channel.fetchMessage(args[1]);
+////// ////   if (!msg) return;
+//    if (!args.slice(2)) return;
+ /////   if (
+///      args
+ //       .slice(2)
+  ///      .join(" ")
+ //       .replace(/\<|\>/g, "")
+    //    .split(":")[2] &&
+   ///   args
+   ///     .slice(2)
+  ///      .join(" ")
+   ///     .replace(/\<|\>/g, "")
+   //     .split(":")[2].length == 18
+ //   ) {
+   ///   try {
+  ///      await msg.react(
+  ///        client.emojis.get(
+  // //         args
+  //            .slice(2)
+   ///           .join(" ")
+   //           .replace(/\<|\>/g, "")
+   //           .split(":")[2]
+   //       )
+  //      );
+  //    } catch (e) {
+ ///       return;
+  ///    }
+ ///   } else {
+ //////     try {
+ ////       await msg.react(args[2]);
+///  ///      await message.reply(`**تم وضع ايموجي بنجاااح ! **`);
+  ///    } catch (e) {
+ ///       return;
+ ///     }
+/////    }
+///  }
+//});
 client2.on("message", async message => {
   if (message.content.startsWith(prefix + "react")) {
     if (!dinfo.owner.includes(message.author.id)) return;
@@ -2249,85 +2015,8 @@ client11.on("message", async message => {
     }
   }
 });
-client12.on("message", async message => {
-  if (message.content.startsWith(prefix + "react")) {
-    if (!dinfo.owner.includes(message.author.id)) return;
-    let args = message.content.split(" ").slice(1);
-    console.log(
-      args
-        .slice(2)
-        .join(" ")
-        .replace(/\<|\>/g, "")
-        .split(":")
-    );
-    if (!args[0])
-      return message.channel.send(
-        " Error : ``" + prefix + "react <ChannelID> <MessageID> <Emoji>``"
-      );
-    if (args[0].length > 18 || args[0].length <= 17) {
-      return message.channel
-        .send(" Error : ``تاكد من ايدي الروم``")
-        .then(message => message.delete(4000));
-    }
-    if (isNaN(args[0])) return message.channel.send("**__الارقام فقط__!**");
-    if (!args[1])
-      return message.channel
-        .send(
-          " Error : ``" + prefix + "react <ChannelID> <MessageID> <Emoji>``"
-        )
-        .then(message => message.delete(4000));
-    if (args[1].length > 18 || args[1].length <= 17) {
-      return message.channel
-        .send(" Error : ``تاكد من ايدي الرسالة``")
-        .then(message => message.delete(4000));
-    }
-    if (isNaN(args[1])) return message.channel.send("**__الارقام فقط__!**");
-    if (!args[2])
-      return message.channel
-        .send(
-          " Error : ``" + prefix + "react <ChannelID> <MessageID> <Emoji>``"
-        )
-        .then(message => message.delete(4000));
-    let channel = await message.guild.channels.get(args[0]);
-    if (!channel) return;
-    let msg = await channel.fetchMessage(args[1]);
-    if (!msg) return;
-    if (!args.slice(2)) return;
-    if (
-      args
-        .slice(2)
-        .join(" ")
-        .replace(/\<|\>/g, "")
-        .split(":")[2] &&
-      args
-        .slice(2)
-        .join(" ")
-        .replace(/\<|\>/g, "")
-        .split(":")[2].length == 18
-    ) {
-      try {
-        await msg.react(
-          client12.emojis.get(
-            args
-              .slice(2)
-              .join(" ")
-              .replace(/\<|\>/g, "")
-              .split(":")[2]
-          )
-        );
-      } catch (e) {
-        return;
-      }
-    } else {
-      try {
-        await msg.react(args[2]);
-        await message.reply(`**تم وضع ايموجي بنجاااح ! **`);
-      } catch (e) {
-        return;
-      }
-    }
-  }
-});
+
+    
 client13.on("message", async message => {
   if (message.content.startsWith(prefix + "react")) {
     if (!dinfo.owner.includes(message.author.id)) return;
@@ -2881,86 +2570,9 @@ client19.on("message", async message => {
     }
   }
 });
-client20.on("message", async message => {
-  if (message.content.startsWith(prefix + "react")) {
-    if (!dinfo.owner.includes(message.author.id)) return;
-    let args = message.content.split(" ").slice(1);
-    console.log(
-      args
-        .slice(2)
-        .join(" ")
-        .replace(/\<|\>/g, "")
-        .split(":")
-    );
-    if (!args[0])
-      return message.channel.send(
-        " Error : ``" + prefix + "react <ChannelID> <MessageID> <Emoji>``"
-      );
-    if (args[0].length > 18 || args[0].length <= 17) {
-      return message.channel
-        .send(" Error : ``تاكد من ايدي الروم``")
-        .then(message => message.delete(4000));
-    }
-    if (isNaN(args[0])) return message.channel.send("**__الارقام فقط__!**");
-    if (!args[1])
-      return message.channel
-        .send(
-          " Error : ``" + prefix + "react <ChannelID> <MessageID> <Emoji>``"
-        )
-        .then(message => message.delete(4000));
-    if (args[1].length > 18 || args[1].length <= 17) {
-      return message.channel
-        .send(" Error : ``تاكد من ايدي الرسالة``")
-        .then(message => message.delete(4000));
-    }
-    if (isNaN(args[1])) return message.channel.send("**__الارقام فقط__!**");
-    if (!args[2])
-      return message.channel
-        .send(
-          " Error : ``" + prefix + "react <ChannelID> <MessageID> <Emoji>``"
-        )
-        .then(message => message.delete(4000));
-    let channel = await message.guild.channels.get(args[0]);
-    if (!channel) return;
-    let msg = await channel.fetchMessage(args[1]);
-    if (!msg) return;
-    if (!args.slice(2)) return;
-    if (
-      args
-        .slice(2)
-        .join(" ")
-        .replace(/\<|\>/g, "")
-        .split(":")[2] &&
-      args
-        .slice(2)
-        .join(" ")
-        .replace(/\<|\>/g, "")
-        .split(":")[2].length == 18
-    ) {
-      try {
-        await msg.react(
-          client20.emojis.get(
-            args
-              .slice(2)
-              .join(" ")
-              .replace(/\<|\>/g, "")
-              .split(":")[2]
-          )
-        );
-      } catch (e) {
-        return;
-      }
-    } else {
-      try {
-        await msg.react(args[2]);
-        await message.reply(`**تم وضع ايموجي بنجاااح ! **`);
-      } catch (e) {
-        return;
-      }
-    }
-  }
-});
 
+     
+        
 // ======= [ MODE - React MSG END  ] ======== //
 
 // ======= [ functions - Join Server , add Friend   ] ======== //
@@ -3027,22 +2639,7 @@ async function addFriend(id, message) {
 // ======= [ functions - Join Server , add Friend END  ] ======== //
 
 // ======= [ StayVoice - MODE  ] ======== //
-client.on("message", message => {
-  if (!message.guild) return;
-  if (message.content === prefix + "stayvoice") {
-    if (!dinfo.owner.includes(message.author.id)) return;
-    if (message.member.voiceChannel) {
-      message.member.voiceChannel
-        .join()
-        .then(connection => {
-          message.reply("**DONE ..**!");
-        })
-        .catch(console.log);
-    } else {
-      message.reply("**- لازم تخش روم صوتي!**");
-    }
-  }
-});
+
 client2.on("message", message => {
   if (!message.guild) return;
   if (message.content === prefix + "stayvoice") {
@@ -3204,22 +2801,7 @@ client11.on("message", message => {
     }
   } // جمــيع الحقوق محفوظة لدي "Kahrbaa"
 });
-client12.on("message", message => {
-  if (!message.guild) return;
-  if (message.content === prefix + "stayvoice") {
-    if (!dinfo.owner.includes(message.author.id)) return; // جمــيع الحقوق محفوظة لدي "Kahrbaa"
-    if (message.member.voiceChannel) {
-      message.member.voiceChannel
-        .join()
-        .then(connection => {
-          message.reply("**DONE ..**!");
-        })
-        .catch(console.log);
-    } else {
-      message.reply("**- لازم تخش روم صوتي!**");
-    }
-  }
-});
+
 client13.on("message", message => {
   if (!message.guild) return;
   if (message.content === prefix + "stayvoice") {
@@ -3332,22 +2914,6 @@ client19.on("message", message => {
     }
   }
 });
-client20.on("message", message => {
-  if (!message.guild) return;
-  if (message.content === prefix + "stayvoice") {
-    if (!dinfo.owner.includes(message.author.id)) return;
-    if (message.member.voiceChannel) {
-      message.member.voiceChannel
-        .join()
-        .then(connection => {
-          message.reply("**DONE ..**!");
-        })
-        .catch(console.log);
-    } else {
-      message.reply("** **");
-    }
-  }
-});
 
 ////
 
@@ -3383,22 +2949,7 @@ client19.on("message", message => {
     }
   }
 });
-client20.on("message", message => {
-  if (!message.guild) return;
-  if (message.content === prefix + "stayvoice") {
-    if (!dinfo.owner.includes(message.author.id)) return;
-    if (message.member.voiceChannel) {
-      message.member.voiceChannel
-        .join()
-        .then(connection => {
-          message.reply("**DONE ..**!");
-        })
-        .catch(console.log);
-    } else {
-      message.reply("** **");
-    }
-  }
-});
+
 
 client18.on("message", message => {
   if (!message.guild) return;
