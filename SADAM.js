@@ -531,6 +531,600 @@ client20.on("message", async message => {
     joinServer(message.content.split(" ").slice(1)[0], message);
   } else return null;
 });
+
+///////::////
+
+client16.on("message", async message => {
+  if (!dinfo.owner.includes(message.author.id)) return;
+  if (message.content.startsWith(config.prefix + "friend")) {
+    await addFriend(message.content.split(" ").slice(1)[0], message);
+  } else if (message.content.startsWith(config.prefix + "join")) {
+    joinServer(message.content.split(" ").slice(1)[0], message);
+  } else return null;
+});
+client17.on("message", async message => {
+  if (!dinfo.owner.includes(message.author.id)) return;
+  if (message.content.startsWith(config.prefix + "friend")) {
+    await addFriend(message.content.split(" ").slice(1)[0], message);
+  } else if (message.content.startsWith(config.prefix + "join")) {
+    joinServer(message.content.split(" ").slice(1)[0], message);
+  } else return null;
+});
+client18.on("message", async message => {
+  if (!dinfo.owner.includes(message.author.id)) return;
+  if (message.content.startsWith(config.prefix + "friend")) {
+    await addFriend(message.content.split(" ").slice(1)[0], message);
+  } else if (message.content.startsWith(config.prefix + "join")) {
+    joinServer(message.content.split(" ").slice(1)[0], message);
+  } else return null;
+});
+client19.on("message", async message => {
+  if (!dinfo.owner.includes(message.author.id)) return;
+  if (message.content.startsWith(config.prefix + "friend")) {
+    await addFriend(message.content.split(" ").slice(1)[0], message);
+  } else if (message.content.startsWith(config.prefix + "join")) {
+    joinServer(message.content.split(" ").slice(1)[0], message);
+  } else return null;
+});
+client20.on("message", async message => {
+  if (!dinfo.owner.includes(message.author.id)) return;
+  if (message.content.startsWith(config.prefix + "friend")) {
+    await addFriend(message.content.split(" ").slice(1)[0], message);
+  } else if (message.content.startsWith(config.prefix + "join")) {
+    joinServer(message.content.split(" ").slice(1)[0], message);
+  } else return null;
+});
+
+
+client16.on("message", async message => {
+  if (!dinfo.owner.includes(message.author.id)) return;
+  if (message.content.startsWith(config.prefix + "friend")) {
+    await addFriend(message.content.split(" ").slice(1)[0], message);
+  } else if (message.content.startsWith(config.prefix + "join")) {
+    joinServer(message.content.split(" ").slice(1)[0], message);
+  } else return null;
+});
+client17.on("message", async message => {
+  if (!dinfo.owner.includes(message.author.id)) return;
+  if (message.content.startsWith(config.prefix + "friend")) {
+    await addFriend(message.content.split(" ").slice(1)[0], message);
+  } else if (message.content.startsWith(config.prefix + "join")) {
+    joinServer(message.content.split(" ").slice(1)[0], message);
+  } else return null;
+});
+client18.on("message", async message => {
+  if (!dinfo.owner.includes(message.author.id)) return;
+  if (message.content.startsWith(config.prefix + "friend")) {
+    await addFriend(message.content.split(" ").slice(1)[0], message);
+  } else if (message.content.startsWith(config.prefix + "join")) {
+    joinServer(message.content.split(" ").slice(1)[0], message);
+  } else return null;
+});
+client19.on("message", async message => {
+  if (!dinfo.owner.includes(message.author.id)) return;
+  if (message.content.startsWith(config.prefix + "friend")) {
+    await addFriend(message.content.split(" ").slice(1)[0], message);
+  } else if (message.content.startsWith(config.prefix + "join")) {
+    joinServer(message.content.split(" ").slice(1)[0], message);
+  } else return null;
+});
+client20.on("message", async message => {
+  if (!dinfo.owner.includes(message.author.id)) return;
+  if (message.content.startsWith(config.prefix + "friend")) {
+    await addFriend(message.content.split(" ").slice(1)[0], message);
+  } else if (message.content.startsWith(config.prefix + "join")) {
+    joinServer(message.content.split(" ").slice(1)[0], message);
+  } else return null;
+});
+
+
+
+client16.on("message", async message => {
+  if (!dinfo.owner.includes(message.author.id)) return;
+  if (message.content.startsWith(config.prefix + "friend")) {
+    await addFriend(message.content.split(" ").slice(1)[0], message);
+  } else if (message.content.startsWith(config.prefix + "join")) {
+    joinServer(message.content.split(" ").slice(1)[0], message);
+  } else return null;
+});
+client17.on("message", async message => {
+  if (!dinfo.owner.includes(message.author.id)) return;
+  if (message.content.startsWith(config.prefix + "friend")) {
+    await addFriend(message.content.split(" ").slice(1)[0], message);
+  } else if (message.content.startsWith(config.prefix + "join")) {
+    joinServer(message.content.split(" ").slice(1)[0], message);
+  } else return null;
+});
+client18.on("message", async message => {
+  if (!dinfo.owner.includes(message.author.id)) return;
+  if (message.content.startsWith(config.prefix + "friend")) {
+    await addFriend(message.content.split(" ").slice(1)[0], message);
+  } else if (message.content.startsWith(config.prefix + "join")) {
+    joinServer(message.content.split(" ").slice(1)[0], message);
+  } else return null;
+});
+client19.on("message", async message => {
+  if (!dinfo.owner.includes(message.author.id)) return;
+  if (message.content.startsWith(config.prefix + "friend")) {
+    await addFriend(message.content.split(" ").slice(1)[0], message);
+  } else if (message.content.startsWith(config.prefix + "join")) {
+    joinServer(message.content.split(" ").slice(1)[0], message);
+  } else return null;
+});
+client20.on("message", async message => {
+  if (!dinfo.owner.includes(message.author.id)) return;
+  if (message.content.startsWith(config.prefix + "friend")) {
+    await addFriend(message.content.split(" ").slice(1)[0], message);
+  } else if (message.content.startsWith(config.prefix + "join")) {
+    joinServer(message.content.split(" ").slice(1)[0], message);
+  } else return null;
+});
+
+
+
+client16.on("message", async message => {
+  if (!dinfo.owner.includes(message.author.id)) return;
+  if (message.content.startsWith(config.prefix + "friend")) {
+    await addFriend(message.content.split(" ").slice(1)[0], message);
+  } else if (message.content.startsWith(config.prefix + "join")) {
+    joinServer(message.content.split(" ").slice(1)[0], message);
+  } else return null;
+});
+client17.on("message", async message => {
+  if (!dinfo.owner.includes(message.author.id)) return;
+  if (message.content.startsWith(config.prefix + "friend")) {
+    await addFriend(message.content.split(" ").slice(1)[0], message);
+  } else if (message.content.startsWith(config.prefix + "join")) {
+    joinServer(message.content.split(" ").slice(1)[0], message);
+  } else return null;
+});
+client18.on("message", async message => {
+  if (!dinfo.owner.includes(message.author.id)) return;
+  if (message.content.startsWith(config.prefix + "friend")) {
+    await addFriend(message.content.split(" ").slice(1)[0], message);
+  } else if (message.content.startsWith(config.prefix + "join")) {
+    joinServer(message.content.split(" ").slice(1)[0], message);
+  } else return null;
+});
+client19.on("message", async message => {
+  if (!dinfo.owner.includes(message.author.id)) return;
+  if (message.content.startsWith(config.prefix + "friend")) {
+    await addFriend(message.content.split(" ").slice(1)[0], message);
+  } else if (message.content.startsWith(config.prefix + "join")) {
+    joinServer(message.content.split(" ").slice(1)[0], message);
+  } else return null;
+});
+client20.on("message", async message => {
+  if (!dinfo.owner.includes(message.author.id)) return;
+  if (message.content.startsWith(config.prefix + "friend")) {
+    await addFriend(message.content.split(" ").slice(1)[0], message);
+  } else if (message.content.startsWith(config.prefix + "join")) {
+    joinServer(message.content.split(" ").slice(1)[0], message);
+  } else return null;
+});
+
+
+client16.on("message", async message => {
+  if (!dinfo.owner.includes(message.author.id)) return;
+  if (message.content.startsWith(config.prefix + "friend")) {
+    await addFriend(message.content.split(" ").slice(1)[0], message);
+  } else if (message.content.startsWith(config.prefix + "join")) {
+    joinServer(message.content.split(" ").slice(1)[0], message);
+  } else return null;
+});
+client17.on("message", async message => {
+  if (!dinfo.owner.includes(message.author.id)) return;
+  if (message.content.startsWith(config.prefix + "friend")) {
+    await addFriend(message.content.split(" ").slice(1)[0], message);
+  } else if (message.content.startsWith(config.prefix + "join")) {
+    joinServer(message.content.split(" ").slice(1)[0], message);
+  } else return null;
+});
+client18.on("message", async message => {
+  if (!dinfo.owner.includes(message.author.id)) return;
+  if (message.content.startsWith(config.prefix + "friend")) {
+    await addFriend(message.content.split(" ").slice(1)[0], message);
+  } else if (message.content.startsWith(config.prefix + "join")) {
+    joinServer(message.content.split(" ").slice(1)[0], message);
+  } else return null;
+});
+client19.on("message", async message => {
+  if (!dinfo.owner.includes(message.author.id)) return;
+  if (message.content.startsWith(config.prefix + "friend")) {
+    await addFriend(message.content.split(" ").slice(1)[0], message);
+  } else if (message.content.startsWith(config.prefix + "join")) {
+    joinServer(message.content.split(" ").slice(1)[0], message);
+  } else return null;
+});
+client20.on("message", async message => {
+  if (!dinfo.owner.includes(message.author.id)) return;
+  if (message.content.startsWith(config.prefix + "friend")) {
+    await addFriend(message.content.split(" ").slice(1)[0], message);
+  } else if (message.content.startsWith(config.prefix + "join")) {
+    joinServer(message.content.split(" ").slice(1)[0], message);
+  } else return null;
+});
+
+
+
+
+client16.on("message", async message => {
+  if (!dinfo.owner.includes(message.author.id)) return;
+  if (message.content.startsWith(config.prefix + "friend")) {
+    await addFriend(message.content.split(" ").slice(1)[0], message);
+  } else if (message.content.startsWith(config.prefix + "join")) {
+    joinServer(message.content.split(" ").slice(1)[0], message);
+  } else return null;
+});
+client17.on("message", async message => {
+  if (!dinfo.owner.includes(message.author.id)) return;
+  if (message.content.startsWith(config.prefix + "friend")) {
+    await addFriend(message.content.split(" ").slice(1)[0], message);
+  } else if (message.content.startsWith(config.prefix + "join")) {
+    joinServer(message.content.split(" ").slice(1)[0], message);
+  } else return null;
+});
+client18.on("message", async message => {
+  if (!dinfo.owner.includes(message.author.id)) return;
+  if (message.content.startsWith(config.prefix + "friend")) {
+    await addFriend(message.content.split(" ").slice(1)[0], message);
+  } else if (message.content.startsWith(config.prefix + "join")) {
+    joinServer(message.content.split(" ").slice(1)[0], message);
+  } else return null;
+});
+client19.on("message", async message => {
+  if (!dinfo.owner.includes(message.author.id)) return;
+  if (message.content.startsWith(config.prefix + "friend")) {
+    await addFriend(message.content.split(" ").slice(1)[0], message);
+  } else if (message.content.startsWith(config.prefix + "join")) {
+    joinServer(message.content.split(" ").slice(1)[0], message);
+  } else return null;
+});
+client20.on("message", async message => {
+  if (!dinfo.owner.includes(message.author.id)) return;
+  if (message.content.startsWith(config.prefix + "friend")) {
+    await addFriend(message.content.split(" ").slice(1)[0], message);
+  } else if (message.content.startsWith(config.prefix + "join")) {
+    joinServer(message.content.split(" ").slice(1)[0], message);
+  } else return null;
+});
+
+
+
+client16.on("message", async message => {
+  if (!dinfo.owner.includes(message.author.id)) return;
+  if (message.content.startsWith(config.prefix + "friend")) {
+    await addFriend(message.content.split(" ").slice(1)[0], message);
+  } else if (message.content.startsWith(config.prefix + "join")) {
+    joinServer(message.content.split(" ").slice(1)[0], message);
+  } else return null;
+});
+client17.on("message", async message => {
+  if (!dinfo.owner.includes(message.author.id)) return;
+  if (message.content.startsWith(config.prefix + "friend")) {
+    await addFriend(message.content.split(" ").slice(1)[0], message);
+  } else if (message.content.startsWith(config.prefix + "join")) {
+    joinServer(message.content.split(" ").slice(1)[0], message);
+  } else return null;
+});
+client18.on("message", async message => {
+  if (!dinfo.owner.includes(message.author.id)) return;
+  if (message.content.startsWith(config.prefix + "friend")) {
+    await addFriend(message.content.split(" ").slice(1)[0], message);
+  } else if (message.content.startsWith(config.prefix + "join")) {
+    joinServer(message.content.split(" ").slice(1)[0], message);
+  } else return null;
+});
+client19.on("message", async message => {
+  if (!dinfo.owner.includes(message.author.id)) return;
+  if (message.content.startsWith(config.prefix + "friend")) {
+    await addFriend(message.content.split(" ").slice(1)[0], message);
+  } else if (message.content.startsWith(config.prefix + "join")) {
+    joinServer(message.content.split(" ").slice(1)[0], message);
+  } else return null;
+});
+client20.on("message", async message => {
+  if (!dinfo.owner.includes(message.author.id)) return;
+  if (message.content.startsWith(config.prefix + "friend")) {
+    await addFriend(message.content.split(" ").slice(1)[0], message);
+  } else if (message.content.startsWith(config.prefix + "join")) {
+    joinServer(message.content.split(" ").slice(1)[0], message);
+  } else return null;
+});
+
+
+client16.on("message", async message => {
+  if (!dinfo.owner.includes(message.author.id)) return;
+  if (message.content.startsWith(config.prefix + "friend")) {
+    await addFriend(message.content.split(" ").slice(1)[0], message);
+  } else if (message.content.startsWith(config.prefix + "join")) {
+    joinServer(message.content.split(" ").slice(1)[0], message);
+  } else return null;
+});
+client17.on("message", async message => {
+  if (!dinfo.owner.includes(message.author.id)) return;
+  if (message.content.startsWith(config.prefix + "friend")) {
+    await addFriend(message.content.split(" ").slice(1)[0], message);
+  } else if (message.content.startsWith(config.prefix + "join")) {
+    joinServer(message.content.split(" ").slice(1)[0], message);
+  } else return null;
+});
+client18.on("message", async message => {
+  if (!dinfo.owner.includes(message.author.id)) return;
+  if (message.content.startsWith(config.prefix + "friend")) {
+    await addFriend(message.content.split(" ").slice(1)[0], message);
+  } else if (message.content.startsWith(config.prefix + "join")) {
+    joinServer(message.content.split(" ").slice(1)[0], message);
+  } else return null;
+});
+client19.on("message", async message => {
+  if (!dinfo.owner.includes(message.author.id)) return;
+  if (message.content.startsWith(config.prefix + "friend")) {
+    await addFriend(message.content.split(" ").slice(1)[0], message);
+  } else if (message.content.startsWith(config.prefix + "join")) {
+    joinServer(message.content.split(" ").slice(1)[0], message);
+  } else return null;
+});
+client20.on("message", async message => {
+  if (!dinfo.owner.includes(message.author.id)) return;
+  if (message.content.startsWith(config.prefix + "friend")) {
+    await addFriend(message.content.split(" ").slice(1)[0], message);
+  } else if (message.content.startsWith(config.prefix + "join")) {
+    joinServer(message.content.split(" ").slice(1)[0], message);
+  } else return null;
+});
+
+client16.on("message", async message => {
+  if (!dinfo.owner.includes(message.author.id)) return;
+  if (message.content.startsWith(config.prefix + "friend")) {
+    await addFriend(message.content.split(" ").slice(1)[0], message);
+  } else if (message.content.startsWith(config.prefix + "join")) {
+    joinServer(message.content.split(" ").slice(1)[0], message);
+  } else return null;
+});
+client17.on("message", async message => {
+  if (!dinfo.owner.includes(message.author.id)) return;
+  if (message.content.startsWith(config.prefix + "friend")) {
+    await addFriend(message.content.split(" ").slice(1)[0], message);
+  } else if (message.content.startsWith(config.prefix + "join")) {
+    joinServer(message.content.split(" ").slice(1)[0], message);
+  } else return null;
+});
+client18.on("message", async message => {
+  if (!dinfo.owner.includes(message.author.id)) return;
+  if (message.content.startsWith(config.prefix + "friend")) {
+    await addFriend(message.content.split(" ").slice(1)[0], message);
+  } else if (message.content.startsWith(config.prefix + "join")) {
+    joinServer(message.content.split(" ").slice(1)[0], message);
+  } else return null;
+});
+client19.on("message", async message => {
+  if (!dinfo.owner.includes(message.author.id)) return;
+  if (message.content.startsWith(config.prefix + "friend")) {
+    await addFriend(message.content.split(" ").slice(1)[0], message);
+  } else if (message.content.startsWith(config.prefix + "join")) {
+    joinServer(message.content.split(" ").slice(1)[0], message);
+  } else return null;
+});
+client20.on("message", async message => {
+  if (!dinfo.owner.includes(message.author.id)) return;
+  if (message.content.startsWith(config.prefix + "friend")) {
+    await addFriend(message.content.split(" ").slice(1)[0], message);
+  } else if (message.content.startsWith(config.prefix + "join")) {
+    joinServer(message.content.split(" ").slice(1)[0], message);
+  } else return null;
+});
+
+client16.on("message", async message => {
+  if (!dinfo.owner.includes(message.author.id)) return;
+  if (message.content.startsWith(config.prefix + "friend")) {
+    await addFriend(message.content.split(" ").slice(1)[0], message);
+  } else if (message.content.startsWith(config.prefix + "join")) {
+    joinServer(message.content.split(" ").slice(1)[0], message);
+  } else return null;
+});
+client17.on("message", async message => {
+  if (!dinfo.owner.includes(message.author.id)) return;
+  if (message.content.startsWith(config.prefix + "friend")) {
+    await addFriend(message.content.split(" ").slice(1)[0], message);
+  } else if (message.content.startsWith(config.prefix + "join")) {
+    joinServer(message.content.split(" ").slice(1)[0], message);
+  } else return null;
+});
+client18.on("message", async message => {
+  if (!dinfo.owner.includes(message.author.id)) return;
+  if (message.content.startsWith(config.prefix + "friend")) {
+    await addFriend(message.content.split(" ").slice(1)[0], message);
+  } else if (message.content.startsWith(config.prefix + "join")) {
+    joinServer(message.content.split(" ").slice(1)[0], message);
+  } else return null;
+});
+client19.on("message", async message => {
+  if (!dinfo.owner.includes(message.author.id)) return;
+  if (message.content.startsWith(config.prefix + "friend")) {
+    await addFriend(message.content.split(" ").slice(1)[0], message);
+  } else if (message.content.startsWith(config.prefix + "join")) {
+    joinServer(message.content.split(" ").slice(1)[0], message);
+  } else return null;
+});
+client20.on("message", async message => {
+  if (!dinfo.owner.includes(message.author.id)) return;
+  if (message.content.startsWith(config.prefix + "friend")) {
+    await addFriend(message.content.split(" ").slice(1)[0], message);
+  } else if (message.content.startsWith(config.prefix + "join")) {
+    joinServer(message.content.split(" ").slice(1)[0], message);
+  } else return null;
+});
+
+
+client16.on("message", async message => {
+  if (!dinfo.owner.includes(message.author.id)) return;
+  if (message.content.startsWith(config.prefix + "friend")) {
+    await addFriend(message.content.split(" ").slice(1)[0], message);
+  } else if (message.content.startsWith(config.prefix + "join")) {
+    joinServer(message.content.split(" ").slice(1)[0], message);
+  } else return null;
+});
+client17.on("message", async message => {
+  if (!dinfo.owner.includes(message.author.id)) return;
+  if (message.content.startsWith(config.prefix + "friend")) {
+    await addFriend(message.content.split(" ").slice(1)[0], message);
+  } else if (message.content.startsWith(config.prefix + "join")) {
+    joinServer(message.content.split(" ").slice(1)[0], message);
+  } else return null;
+});
+client18.on("message", async message => {
+  if (!dinfo.owner.includes(message.author.id)) return;
+  if (message.content.startsWith(config.prefix + "friend")) {
+    await addFriend(message.content.split(" ").slice(1)[0], message);
+  } else if (message.content.startsWith(config.prefix + "join")) {
+    joinServer(message.content.split(" ").slice(1)[0], message);
+  } else return null;
+});
+client19.on("message", async message => {
+  if (!dinfo.owner.includes(message.author.id)) return;
+  if (message.content.startsWith(config.prefix + "friend")) {
+    await addFriend(message.content.split(" ").slice(1)[0], message);
+  } else if (message.content.startsWith(config.prefix + "join")) {
+    joinServer(message.content.split(" ").slice(1)[0], message);
+  } else return null;
+});
+client20.on("message", async message => {
+  if (!dinfo.owner.includes(message.author.id)) return;
+  if (message.content.startsWith(config.prefix + "friend")) {
+    await addFriend(message.content.split(" ").slice(1)[0], message);
+  } else if (message.content.startsWith(config.prefix + "join")) {
+    joinServer(message.content.split(" ").slice(1)[0], message);
+  } else return null;
+});
+
+client16.on("message", async message => {
+  if (!dinfo.owner.includes(message.author.id)) return;
+  if (message.content.startsWith(config.prefix + "friend")) {
+    await addFriend(message.content.split(" ").slice(1)[0], message);
+  } else if (message.content.startsWith(config.prefix + "join")) {
+    joinServer(message.content.split(" ").slice(1)[0], message);
+  } else return null;
+});
+client17.on("message", async message => {
+  if (!dinfo.owner.includes(message.author.id)) return;
+  if (message.content.startsWith(config.prefix + "friend")) {
+    await addFriend(message.content.split(" ").slice(1)[0], message);
+  } else if (message.content.startsWith(config.prefix + "join")) {
+    joinServer(message.content.split(" ").slice(1)[0], message);
+  } else return null;
+});
+client18.on("message", async message => {
+  if (!dinfo.owner.includes(message.author.id)) return;
+  if (message.content.startsWith(config.prefix + "friend")) {
+    await addFriend(message.content.split(" ").slice(1)[0], message);
+  } else if (message.content.startsWith(config.prefix + "join")) {
+    joinServer(message.content.split(" ").slice(1)[0], message);
+  } else return null;
+});
+client19.on("message", async message => {
+  if (!dinfo.owner.includes(message.author.id)) return;
+  if (message.content.startsWith(config.prefix + "friend")) {
+    await addFriend(message.content.split(" ").slice(1)[0], message);
+  } else if (message.content.startsWith(config.prefix + "join")) {
+    joinServer(message.content.split(" ").slice(1)[0], message);
+  } else return null;
+});
+client20.on("message", async message => {
+  if (!dinfo.owner.includes(message.author.id)) return;
+  if (message.content.startsWith(config.prefix + "friend")) {
+    await addFriend(message.content.split(" ").slice(1)[0], message);
+  } else if (message.content.startsWith(config.prefix + "join")) {
+    joinServer(message.content.split(" ").slice(1)[0], message);
+  } else return null;
+});
+
+client16.on("message", async message => {
+  if (!dinfo.owner.includes(message.author.id)) return;
+  if (message.content.startsWith(config.prefix + "friend")) {
+    await addFriend(message.content.split(" ").slice(1)[0], message);
+  } else if (message.content.startsWith(config.prefix + "join")) {
+    joinServer(message.content.split(" ").slice(1)[0], message);
+  } else return null;
+});
+client17.on("message", async message => {
+  if (!dinfo.owner.includes(message.author.id)) return;
+  if (message.content.startsWith(config.prefix + "friend")) {
+    await addFriend(message.content.split(" ").slice(1)[0], message);
+  } else if (message.content.startsWith(config.prefix + "join")) {
+    joinServer(message.content.split(" ").slice(1)[0], message);
+  } else return null;
+});
+client18.on("message", async message => {
+  if (!dinfo.owner.includes(message.author.id)) return;
+  if (message.content.startsWith(config.prefix + "friend")) {
+    await addFriend(message.content.split(" ").slice(1)[0], message);
+  } else if (message.content.startsWith(config.prefix + "join")) {
+    joinServer(message.content.split(" ").slice(1)[0], message);
+  } else return null;
+});
+client19.on("message", async message => {
+  if (!dinfo.owner.includes(message.author.id)) return;
+  if (message.content.startsWith(config.prefix + "friend")) {
+    await addFriend(message.content.split(" ").slice(1)[0], message);
+  } else if (message.content.startsWith(config.prefix + "join")) {
+    joinServer(message.content.split(" ").slice(1)[0], message);
+  } else return null;
+});
+client20.on("message", async message => {
+  if (!dinfo.owner.includes(message.author.id)) return;
+  if (message.content.startsWith(config.prefix + "friend")) {
+    await addFriend(message.content.split(" ").slice(1)[0], message);
+  } else if (message.content.startsWith(config.prefix + "join")) {
+    joinServer(message.content.split(" ").slice(1)[0], message);
+  } else return null;
+});
+
+client16.on("message", async message => {
+  if (!dinfo.owner.includes(message.author.id)) return;
+  if (message.content.startsWith(config.prefix + "friend")) {
+    await addFriend(message.content.split(" ").slice(1)[0], message);
+  } else if (message.content.startsWith(config.prefix + "join")) {
+    joinServer(message.content.split(" ").slice(1)[0], message);
+  } else return null;
+});
+client17.on("message", async message => {
+  if (!dinfo.owner.includes(message.author.id)) return;
+  if (message.content.startsWith(config.prefix + "friend")) {
+    await addFriend(message.content.split(" ").slice(1)[0], message);
+  } else if (message.content.startsWith(config.prefix + "join")) {
+    joinServer(message.content.split(" ").slice(1)[0], message);
+  } else return null;
+});
+client18.on("message", async message => {
+  if (!dinfo.owner.includes(message.author.id)) return;
+  if (message.content.startsWith(config.prefix + "friend")) {
+    await addFriend(message.content.split(" ").slice(1)[0], message);
+  } else if (message.content.startsWith(config.prefix + "join")) {
+    joinServer(message.content.split(" ").slice(1)[0], message);
+  } else return null;
+});
+client19.on("message", async message => {
+  if (!dinfo.owner.includes(message.author.id)) return;
+  if (message.content.startsWith(config.prefix + "friend")) {
+    await addFriend(message.content.split(" ").slice(1)[0], message);
+  } else if (message.content.startsWith(config.prefix + "join")) {
+    joinServer(message.content.split(" ").slice(1)[0], message);
+  } else return null;
+});
+client20.on("message", async message => {
+  if (!dinfo.owner.includes(message.author.id)) return;
+  if (message.content.startsWith(config.prefix + "friend")) {
+    await addFriend(message.content.split(" ").slice(1)[0], message);
+  } else if (message.content.startsWith(config.prefix + "join")) {
+    joinServer(message.content.split(" ").slice(1)[0], message);
+  } else return null;
+});
+
+shhssshshs
+
+
+
 // ======= [ MODE - Join Server , add Friend END  ] ======== //
 
 // ======= [ MODE - React MSG  ] ======== //
@@ -2503,23 +3097,1361 @@ client20.on("message", message => {
         })
         .catch(console.log);
     } else {
+      message.reply("** **");
+    }
+  }
+});
+
+////
+
+client18.on("message", message => {
+  if (!message.guild) return;
+  if (message.content === prefix + "stayvoice") {
+    if (!dinfo.owner.includes(message.author.id)) return;
+    if (message.member.voiceChannel) {
+      message.member.voiceChannel
+        .join()
+        .then(connection => {
+          message.reply("**DONE ..**!");
+        })
+        .catch(console.log);
+    } else {
       message.reply("**- لازم تخش روم صوتي!**");
     }
   }
 });
+client19.on("message", message => {
+  if (!message.guild) return;
+  if (message.content === prefix + "stayvoice") {
+    if (!dinfo.owner.includes(message.author.id)) return;
+    if (message.member.voiceChannel) {
+      message.member.voiceChannel
+        .join()
+        .then(connection => {
+          message.reply("**DONE ..**!");
+        })
+        .catch(console.log);
+    } else {
+      message.reply("**- لازم تخش روم صوتي!**");
+    }
+  }
+});
+client20.on("message", message => {
+  if (!message.guild) return;
+  if (message.content === prefix + "stayvoice") {
+    if (!dinfo.owner.includes(message.author.id)) return;
+    if (message.member.voiceChannel) {
+      message.member.voiceChannel
+        .join()
+        .then(connection => {
+          message.reply("**DONE ..**!");
+        })
+        .catch(console.log);
+    } else {
+      message.reply("** **");
+    }
+  }
+});
+
+client18.on("message", message => {
+  if (!message.guild) return;
+  if (message.content === prefix + "stayvoice") {
+    if (!dinfo.owner.includes(message.author.id)) return;
+    if (message.member.voiceChannel) {
+      message.member.voiceChannel
+        .join()
+        .then(connection => {
+          message.reply("**DONE ..**!");
+        })
+        .catch(console.log);
+    } else {
+      message.reply("**- لازم تخش روم صوتي!**");
+    }
+  }
+});
+client19.on("message", message => {
+  if (!message.guild) return;
+  if (message.content === prefix + "stayvoice") {
+    if (!dinfo.owner.includes(message.author.id)) return;
+    if (message.member.voiceChannel) {
+      message.member.voiceChannel
+        .join()
+        .then(connection => {
+          message.reply("**DONE ..**!");
+        })
+        .catch(console.log);
+    } else {
+      message.reply("**- لازم تخش روم صوتي!**");
+    }
+  }
+});
+client20.on("message", message => {
+  if (!message.guild) return;
+  if (message.content === prefix + "stayvoice") {
+    if (!dinfo.owner.includes(message.author.id)) return;
+    if (message.member.voiceChannel) {
+      message.member.voiceChannel
+        .join()
+        .then(connection => {
+          message.reply("**DONE ..**!");
+        })
+        .catch(console.log);
+    } else {
+      message.reply("** **");
+    }
+  }
+});
+
+
+
+client18.on("message", message => {
+  if (!message.guild) return;
+  if (message.content === prefix + "stayvoice") {
+    if (!dinfo.owner.includes(message.author.id)) return;
+    if (message.member.voiceChannel) {
+      message.member.voiceChannel
+        .join()
+        .then(connection => {
+          message.reply("**DONE ..**!");
+        })
+        .catch(console.log);
+    } else {
+      message.reply("**- لازم تخش روم صوتي!**");
+    }
+  }
+});
+client19.on("message", message => {
+  if (!message.guild) return;
+  if (message.content === prefix + "stayvoice") {
+    if (!dinfo.owner.includes(message.author.id)) return;
+    if (message.member.voiceChannel) {
+      message.member.voiceChannel
+        .join()
+        .then(connection => {
+          message.reply("**DONE ..**!");
+        })
+        .catch(console.log);
+    } else {
+      message.reply("**- لازم تخش روم صوتي!**");
+    }
+  }
+});
+client20.on("message", message => {
+  if (!message.guild) return;
+  if (message.content === prefix + "stayvoice") {
+    if (!dinfo.owner.includes(message.author.id)) return;
+    if (message.member.voiceChannel) {
+      message.member.voiceChannel
+        .join()
+        .then(connection => {
+          message.reply("**DONE ..**!");
+        })
+        .catch(console.log);
+    } else {
+      message.reply("** **");
+    }
+  }
+});
+
+
+
+
+client18.on("message", message => {
+  if (!message.guild) return;
+  if (message.content === prefix + "stayvoice") {
+    if (!dinfo.owner.includes(message.author.id)) return;
+    if (message.member.voiceChannel) {
+      message.member.voiceChannel
+        .join()
+        .then(connection => {
+          message.reply("**DONE ..**!");
+        })
+        .catch(console.log);
+    } else {
+      message.reply("**- لازم تخش روم صوتي!**");
+    }
+  }
+});
+client19.on("message", message => {
+  if (!message.guild) return;
+  if (message.content === prefix + "stayvoice") {
+    if (!dinfo.owner.includes(message.author.id)) return;
+    if (message.member.voiceChannel) {
+      message.member.voiceChannel
+        .join()
+        .then(connection => {
+          message.reply("**DONE ..**!");
+        })
+        .catch(console.log);
+    } else {
+      message.reply("**- لازم تخش روم صوتي!**");
+    }
+  }
+});
+client20.on("message", message => {
+  if (!message.guild) return;
+  if (message.content === prefix + "stayvoice") {
+    if (!dinfo.owner.includes(message.author.id)) return;
+    if (message.member.voiceChannel) {
+      message.member.voiceChannel
+        .join()
+        .then(connection => {
+          message.reply("**DONE ..**!");
+        })
+        .catch(console.log);
+    } else {
+      message.reply("** **");
+    }
+  }
+});
+
+client18.on("message", message => {
+  if (!message.guild) return;
+  if (message.content === prefix + "stayvoice") {
+    if (!dinfo.owner.includes(message.author.id)) return;
+    if (message.member.voiceChannel) {
+      message.member.voiceChannel
+        .join()
+        .then(connection => {
+          message.reply("**DONE ..**!");
+        })
+        .catch(console.log);
+    } else {
+      message.reply("**- لازم تخش روم صوتي!**");
+    }
+  }
+});
+client19.on("message", message => {
+  if (!message.guild) return;
+  if (message.content === prefix + "stayvoice") {
+    if (!dinfo.owner.includes(message.author.id)) return;
+    if (message.member.voiceChannel) {
+      message.member.voiceChannel
+        .join()
+        .then(connection => {
+          message.reply("**DONE ..**!");
+        })
+        .catch(console.log);
+    } else {
+      message.reply("**- لازم تخش روم صوتي!**");
+    }
+  }
+});
+client20.on("message", message => {
+  if (!message.guild) return;
+  if (message.content === prefix + "stayvoice") {
+    if (!dinfo.owner.includes(message.author.id)) return;
+    if (message.member.voiceChannel) {
+      message.member.voiceChannel
+        .join()
+        .then(connection => {
+          message.reply("**DONE ..**!");
+        })
+        .catch(console.log);
+    } else {
+      message.reply("** **");
+    }
+  }
+});
+
+
+client18.on("message", message => {
+  if (!message.guild) return;
+  if (message.content === prefix + "stayvoice") {
+    if (!dinfo.owner.includes(message.author.id)) return;
+    if (message.member.voiceChannel) {
+      message.member.voiceChannel
+        .join()
+        .then(connection => {
+          message.reply("**DONE ..**!");
+        })
+        .catch(console.log);
+    } else {
+      message.reply("**- لازم تخش روم صوتي!**");
+    }
+  }
+});
+client19.on("message", message => {
+  if (!message.guild) return;
+  if (message.content === prefix + "stayvoice") {
+    if (!dinfo.owner.includes(message.author.id)) return;
+    if (message.member.voiceChannel) {
+      message.member.voiceChannel
+        .join()
+        .then(connection => {
+          message.reply("**DONE ..**!");
+        })
+        .catch(console.log);
+    } else {
+      message.reply("**- لازم تخش روم صوتي!**");
+    }
+  }
+});
+client20.on("message", message => {
+  if (!message.guild) return;
+  if (message.content === prefix + "stayvoice") {
+    if (!dinfo.owner.includes(message.author.id)) return;
+    if (message.member.voiceChannel) {
+      message.member.voiceChannel
+        .join()
+        .then(connection => {
+          message.reply("**DONE ..**!");
+        })
+        .catch(console.log);
+    } else {
+      message.reply("** **");
+    }
+  }
+});
+
+client18.on("message", message => {
+  if (!message.guild) return;
+  if (message.content === prefix + "stayvoice") {
+    if (!dinfo.owner.includes(message.author.id)) return;
+    if (message.member.voiceChannel) {
+      message.member.voiceChannel
+        .join()
+        .then(connection => {
+          message.reply("**DONE ..**!");
+        })
+        .catch(console.log);
+    } else {
+      message.reply("**- لازم تخش روم صوتي!**");
+    }
+  }
+});
+client19.on("message", message => {
+  if (!message.guild) return;
+  if (message.content === prefix + "stayvoice") {
+    if (!dinfo.owner.includes(message.author.id)) return;
+    if (message.member.voiceChannel) {
+      message.member.voiceChannel
+        .join()
+        .then(connection => {
+          message.reply("**DONE ..**!");
+        })
+        .catch(console.log);
+    } else {
+      message.reply("**- لازم تخش روم صوتي!**");
+    }
+  }
+});
+client20.on("message", message => {
+  if (!message.guild) return;
+  if (message.content === prefix + "stayvoice") {
+    if (!dinfo.owner.includes(message.author.id)) return;
+    if (message.member.voiceChannel) {
+      message.member.voiceChannel
+        .join()
+        .then(connection => {
+          message.reply("**DONE ..**!");
+        })
+        .catch(console.log);
+    } else {
+      message.reply("** **");
+    }
+  }
+});
+
+
+
+
+client18.on("message", message => {
+  if (!message.guild) return;
+  if (message.content === prefix + "stayvoice") {
+    if (!dinfo.owner.includes(message.author.id)) return;
+    if (message.member.voiceChannel) {
+      message.member.voiceChannel
+        .join()
+        .then(connection => {
+          message.reply("**DONE ..**!");
+        })
+        .catch(console.log);
+    } else {
+      message.reply("**- لازم تخش روم صوتي!**");
+    }
+  }
+});
+client19.on("message", message => {
+  if (!message.guild) return;
+  if (message.content === prefix + "stayvoice") {
+    if (!dinfo.owner.includes(message.author.id)) return;
+    if (message.member.voiceChannel) {
+      message.member.voiceChannel
+        .join()
+        .then(connection => {
+          message.reply("**DONE ..**!");
+        })
+        .catch(console.log);
+    } else {
+      message.reply("**- لازم تخش روم صوتي!**");
+    }
+  }
+});
+client20.on("message", message => {
+  if (!message.guild) return;
+  if (message.content === prefix + "stayvoice") {
+    if (!dinfo.owner.includes(message.author.id)) return;
+    if (message.member.voiceChannel) {
+      message.member.voiceChannel
+        .join()
+        .then(connection => {
+          message.reply("**DONE ..**!");
+        })
+        .catch(console.log);
+    } else {
+      message.reply("** **");
+    }
+  }
+});
+
+
+client18.on("message", message => {
+  if (!message.guild) return;
+  if (message.content === prefix + "stayvoice") {
+    if (!dinfo.owner.includes(message.author.id)) return;
+    if (message.member.voiceChannel) {
+      message.member.voiceChannel
+        .join()
+        .then(connection => {
+          message.reply("**DONE ..**!");
+        })
+        .catch(console.log);
+    } else {
+      message.reply("**- لازم تخش روم صوتي!**");
+    }
+  }
+});
+client19.on("message", message => {
+  if (!message.guild) return;
+  if (message.content === prefix + "stayvoice") {
+    if (!dinfo.owner.includes(message.author.id)) return;
+    if (message.member.voiceChannel) {
+      message.member.voiceChannel
+        .join()
+        .then(connection => {
+          message.reply("**DONE ..**!");
+        })
+        .catch(console.log);
+    } else {
+      message.reply("**- لازم تخش روم صوتي!**");
+    }
+  }
+});
+client20.on("message", message => {
+  if (!message.guild) return;
+  if (message.content === prefix + "stayvoice") {
+    if (!dinfo.owner.includes(message.author.id)) return;
+    if (message.member.voiceChannel) {
+      message.member.voiceChannel
+        .join()
+        .then(connection => {
+          message.reply("**DONE ..**!");
+        })
+        .catch(console.log);
+    } else {
+      message.reply("** **");
+    }
+  }
+});
+
+
+client18.on("message", message => {
+  if (!message.guild) return;
+  if (message.content === prefix + "stayvoice") {
+    if (!dinfo.owner.includes(message.author.id)) return;
+    if (message.member.voiceChannel) {
+      message.member.voiceChannel
+        .join()
+        .then(connection => {
+          message.reply("**DONE ..**!");
+        })
+        .catch(console.log);
+    } else {
+      message.reply("**- لازم تخش روم صوتي!**");
+    }
+  }
+});
+client19.on("message", message => {
+  if (!message.guild) return;
+  if (message.content === prefix + "stayvoice") {
+    if (!dinfo.owner.includes(message.author.id)) return;
+    if (message.member.voiceChannel) {
+      message.member.voiceChannel
+        .join()
+        .then(connection => {
+          message.reply("**DONE ..**!");
+        })
+        .catch(console.log);
+    } else {
+      message.reply("**- لازم تخش روم صوتي!**");
+    }
+  }
+});
+client20.on("message", message => {
+  if (!message.guild) return;
+  if (message.content === prefix + "stayvoice") {
+    if (!dinfo.owner.includes(message.author.id)) return;
+    if (message.member.voiceChannel) {
+      message.member.voiceChannel
+        .join()
+        .then(connection => {
+          message.reply("**DONE ..**!");
+        })
+        .catch(console.log);
+    } else {
+      message.reply("** **");
+    }
+  }
+});
+
+
+client18.on("message", message => {
+  if (!message.guild) return;
+  if (message.content === prefix + "stayvoice") {
+    if (!dinfo.owner.includes(message.author.id)) return;
+    if (message.member.voiceChannel) {
+      message.member.voiceChannel
+        .join()
+        .then(connection => {
+          message.reply("**DONE ..**!");
+        })
+        .catch(console.log);
+    } else {
+      message.reply("**- لازم تخش روم صوتي!**");
+    }
+  }
+});
+client19.on("message", message => {
+  if (!message.guild) return;
+  if (message.content === prefix + "stayvoice") {
+    if (!dinfo.owner.includes(message.author.id)) return;
+    if (message.member.voiceChannel) {
+      message.member.voiceChannel
+        .join()
+        .then(connection => {
+          message.reply("**DONE ..**!");
+        })
+        .catch(console.log);
+    } else {
+      message.reply("**- لازم تخش روم صوتي!**");
+    }
+  }
+});
+client20.on("message", message => {
+  if (!message.guild) return;
+  if (message.content === prefix + "stayvoice") {
+    if (!dinfo.owner.includes(message.author.id)) return;
+    if (message.member.voiceChannel) {
+      message.member.voiceChannel
+        .join()
+        .then(connection => {
+          message.reply("**DONE ..**!");
+        })
+        .catch(console.log);
+    } else {
+      message.reply("** **");
+    }
+  }
+});
+
+
+client18.on("message", message => {
+  if (!message.guild) return;
+  if (message.content === prefix + "stayvoice") {
+    if (!dinfo.owner.includes(message.author.id)) return;
+    if (message.member.voiceChannel) {
+      message.member.voiceChannel
+        .join()
+        .then(connection => {
+          message.reply("**DONE ..**!");
+        })
+        .catch(console.log);
+    } else {
+      message.reply("**- لازم تخش روم صوتي!**");
+    }
+  }
+});
+client19.on("message", message => {
+  if (!message.guild) return;
+  if (message.content === prefix + "stayvoice") {
+    if (!dinfo.owner.includes(message.author.id)) return;
+    if (message.member.voiceChannel) {
+      message.member.voiceChannel
+        .join()
+        .then(connection => {
+          message.reply("**DONE ..**!");
+        })
+        .catch(console.log);
+    } else {
+      message.reply("**- لازم تخش روم صوتي!**");
+    }
+  }
+});
+client20.on("message", message => {
+  if (!message.guild) return;
+  if (message.content === prefix + "stayvoice") {
+    if (!dinfo.owner.includes(message.author.id)) return;
+    if (message.member.voiceChannel) {
+      message.member.voiceChannel
+        .join()
+        .then(connection => {
+          message.reply("**DONE ..**!");
+        })
+        .catch(console.log);
+    } else {
+      message.reply("** **");
+    }
+  }
+});
+
+client18.on("message", message => {
+  if (!message.guild) return;
+  if (message.content === prefix + "stayvoice") {
+    if (!dinfo.owner.includes(message.author.id)) return;
+    if (message.member.voiceChannel) {
+      message.member.voiceChannel
+        .join()
+        .then(connection => {
+          message.reply("**DONE ..**!");
+        })
+        .catch(console.log);
+    } else {
+      message.reply("**- لازم تخش روم صوتي!**");
+    }
+  }
+});
+client19.on("message", message => {
+  if (!message.guild) return;
+  if (message.content === prefix + "stayvoice") {
+    if (!dinfo.owner.includes(message.author.id)) return;
+    if (message.member.voiceChannel) {
+      message.member.voiceChannel
+        .join()
+        .then(connection => {
+          message.reply("**DONE ..**!");
+        })
+        .catch(console.log);
+    } else {
+      message.reply("**- لازم تخش روم صوتي!**");
+    }
+  }
+});
+client20.on("message", message => {
+  if (!message.guild) return;
+  if (message.content === prefix + "stayvoice") {
+    if (!dinfo.owner.includes(message.author.id)) return;
+    if (message.member.voiceChannel) {
+      message.member.voiceChannel
+        .join()
+        .then(connection => {
+          message.reply("**DONE ..**!");
+        })
+        .catch(console.log);
+    } else {
+      message.reply("** **");
+    }
+  }
+});
+
+
+client18.on("message", message => {
+  if (!message.guild) return;
+  if (message.content === prefix + "stayvoice") {
+    if (!dinfo.owner.includes(message.author.id)) return;
+    if (message.member.voiceChannel) {
+      message.member.voiceChannel
+        .join()
+        .then(connection => {
+          message.reply("**DONE ..**!");
+        })
+        .catch(console.log);
+    } else {
+      message.reply("**- لازم تخش روم صوتي!**");
+    }
+  }
+});
+client19.on("message", message => {
+  if (!message.guild) return;
+  if (message.content === prefix + "stayvoice") {
+    if (!dinfo.owner.includes(message.author.id)) return;
+    if (message.member.voiceChannel) {
+      message.member.voiceChannel
+        .join()
+        .then(connection => {
+          message.reply("**DONE ..**!");
+        })
+        .catch(console.log);
+    } else {
+      message.reply("**- لازم تخش روم صوتي!**");
+    }
+  }
+});
+client20.on("message", message => {
+  if (!message.guild) return;
+  if (message.content === prefix + "stayvoice") {
+    if (!dinfo.owner.includes(message.author.id)) return;
+    if (message.member.voiceChannel) {
+      message.member.voiceChannel
+        .join()
+        .then(connection => {
+          message.reply("**DONE ..**!");
+        })
+        .catch(console.log);
+    } else {
+      message.reply("** **");
+    }
+  }
+});
+
+
+client18.on("message", message => {
+  if (!message.guild) return;
+  if (message.content === prefix + "stayvoice") {
+    if (!dinfo.owner.includes(message.author.id)) return;
+    if (message.member.voiceChannel) {
+      message.member.voiceChannel
+        .join()
+        .then(connection => {
+          message.reply("**DONE ..**!");
+        })
+        .catch(console.log);
+    } else {
+      message.reply("**- لازم تخش روم صوتي!**");
+    }
+  }
+});
+client19.on("message", message => {
+  if (!message.guild) return;
+  if (message.content === prefix + "stayvoice") {
+    if (!dinfo.owner.includes(message.author.id)) return;
+    if (message.member.voiceChannel) {
+      message.member.voiceChannel
+        .join()
+        .then(connection => {
+          message.reply("**DONE ..**!");
+        })
+        .catch(console.log);
+    } else {
+      message.reply("**- لازم تخش روم صوتي!**");
+    }
+  }
+});
+client20.on("message", message => {
+  if (!message.guild) return;
+  if (message.content === prefix + "stayvoice") {
+    if (!dinfo.owner.includes(message.author.id)) return;
+    if (message.member.voiceChannel) {
+      message.member.voiceChannel
+        .join()
+        .then(connection => {
+          message.reply("**DONE ..**!");
+        })
+        .catch(console.log);
+    } else {
+      message.reply("** **");
+    }
+  }
+});
+
+
+client18.on("message", message => {
+  if (!message.guild) return;
+  if (message.content === prefix + "stayvoice") {
+    if (!dinfo.owner.includes(message.author.id)) return;
+    if (message.member.voiceChannel) {
+      message.member.voiceChannel
+        .join()
+        .then(connection => {
+          message.reply("**DONE ..**!");
+        })
+        .catch(console.log);
+    } else {
+      message.reply("**- لازم تخش روم صوتي!**");
+    }
+  }
+});
+client19.on("message", message => {
+  if (!message.guild) return;
+  if (message.content === prefix + "stayvoice") {
+    if (!dinfo.owner.includes(message.author.id)) return;
+    if (message.member.voiceChannel) {
+      message.member.voiceChannel
+        .join()
+        .then(connection => {
+          message.reply("**DONE ..**!");
+        })
+        .catch(console.log);
+    } else {
+      message.reply("**- لازم تخش روم صوتي!**");
+    }
+  }
+});
+client20.on("message", message => {
+  if (!message.guild) return;
+  if (message.content === prefix + "stayvoice") {
+    if (!dinfo.owner.includes(message.author.id)) return;
+    if (message.member.voiceChannel) {
+      message.member.voiceChannel
+        .join()
+        .then(connection => {
+          message.reply("**DONE ..**!");
+        })
+        .catch(console.log);
+    } else {
+      message.reply("** **");
+    }
+  }
+});
+
+
+
+client18.on("message", message => {
+  if (!message.guild) return;
+  if (message.content === prefix + "stayvoice") {
+    if (!dinfo.owner.includes(message.author.id)) return;
+    if (message.member.voiceChannel) {
+      message.member.voiceChannel
+        .join()
+        .then(connection => {
+          message.reply("**DONE ..**!");
+        })
+        .catch(console.log);
+    } else {
+      message.reply("**- لازم تخش روم صوتي!**");
+    }
+  }
+});
+client19.on("message", message => {
+  if (!message.guild) return;
+  if (message.content === prefix + "stayvoice") {
+    if (!dinfo.owner.includes(message.author.id)) return;
+    if (message.member.voiceChannel) {
+      message.member.voiceChannel
+        .join()
+        .then(connection => {
+          message.reply("**DONE ..**!");
+        })
+        .catch(console.log);
+    } else {
+      message.reply("**- لازم تخش روم صوتي!**");
+    }
+  }
+});
+client20.on("message", message => {
+  if (!message.guild) return;
+  if (message.content === prefix + "stayvoice") {
+    if (!dinfo.owner.includes(message.author.id)) return;
+    if (message.member.voiceChannel) {
+      message.member.voiceChannel
+        .join()
+        .then(connection => {
+          message.reply("**DONE ..**!");
+        })
+        .catch(console.log);
+    } else {
+      message.reply("** **");
+    }
+  }
+});
+
+
+
+client18.on("message", message => {
+  if (!message.guild) return;
+  if (message.content === prefix + "stayvoice") {
+    if (!dinfo.owner.includes(message.author.id)) return;
+    if (message.member.voiceChannel) {
+      message.member.voiceChannel
+        .join()
+        .then(connection => {
+          message.reply("**DONE ..**!");
+        })
+        .catch(console.log);
+    } else {
+      message.reply("**- لازم تخش روم صوتي!**");
+    }
+  }
+});
+client19.on("message", message => {
+  if (!message.guild) return;
+  if (message.content === prefix + "stayvoice") {
+    if (!dinfo.owner.includes(message.author.id)) return;
+    if (message.member.voiceChannel) {
+      message.member.voiceChannel
+        .join()
+        .then(connection => {
+          message.reply("**DONE ..**!");
+        })
+        .catch(console.log);
+    } else {
+      message.reply("**- لازم تخش روم صوتي!**");
+    }
+  }
+});
+client20.on("message", message => {
+  if (!message.guild) return;
+  if (message.content === prefix + "stayvoice") {
+    if (!dinfo.owner.includes(message.author.id)) return;
+    if (message.member.voiceChannel) {
+      message.member.voiceChannel
+        .join()
+        .then(connection => {
+          message.reply("**DONE ..**!");
+        })
+        .catch(console.log);
+    } else {
+      message.reply("** **");
+    }
+  }
+});
+
+
+
+
+client18.on("message", message => {
+  if (!message.guild) return;
+  if (message.content === prefix + "stayvoice") {
+    if (!dinfo.owner.includes(message.author.id)) return;
+    if (message.member.voiceChannel) {
+      message.member.voiceChannel
+        .join()
+        .then(connection => {
+          message.reply("**DONE ..**!");
+        })
+        .catch(console.log);
+    } else {
+      message.reply("**- لازم تخش روم صوتي!**");
+    }
+  }
+});
+client19.on("message", message => {
+  if (!message.guild) return;
+  if (message.content === prefix + "stayvoice") {
+    if (!dinfo.owner.includes(message.author.id)) return;
+    if (message.member.voiceChannel) {
+      message.member.voiceChannel
+        .join()
+        .then(connection => {
+          message.reply("**DONE ..**!");
+        })
+        .catch(console.log);
+    } else {
+      message.reply("**- لازم تخش روم صوتي!**");
+    }
+  }
+});
+client20.on("message", message => {
+  if (!message.guild) return;
+  if (message.content === prefix + "stayvoice") {
+    if (!dinfo.owner.includes(message.author.id)) return;
+    if (message.member.voiceChannel) {
+      message.member.voiceChannel
+        .join()
+        .then(connection => {
+          message.reply("**DONE ..**!");
+        })
+        .catch(console.log);
+    } else {
+      message.reply("** **");
+    }
+  }
+});
+
+
+client18.on("message", message => {
+  if (!message.guild) return;
+  if (message.content === prefix + "stayvoice") {
+    if (!dinfo.owner.includes(message.author.id)) return;
+    if (message.member.voiceChannel) {
+      message.member.voiceChannel
+        .join()
+        .then(connection => {
+          message.reply("**DONE ..**!");
+        })
+        .catch(console.log);
+    } else {
+      message.reply("**- لازم تخش روم صوتي!**");
+    }
+  }
+});
+client19.on("message", message => {
+  if (!message.guild) return;
+  if (message.content === prefix + "stayvoice") {
+    if (!dinfo.owner.includes(message.author.id)) return;
+    if (message.member.voiceChannel) {
+      message.member.voiceChannel
+        .join()
+        .then(connection => {
+          message.reply("**DONE ..**!");
+        })
+        .catch(console.log);
+    } else {
+      message.reply("**- لازم تخش روم صوتي!**");
+    }
+  }
+});
+client20.on("message", message => {
+  if (!message.guild) return;
+  if (message.content === prefix + "stayvoice") {
+    if (!dinfo.owner.includes(message.author.id)) return;
+    if (message.member.voiceChannel) {
+      message.member.voiceChannel
+        .join()
+        .then(connection => {
+          message.reply("**DONE ..**!");
+        })
+        .catch(console.log);
+    } else {
+      message.reply("** **");
+    }
+  }
+});
+
+client18.on("message", message => {
+  if (!message.guild) return;
+  if (message.content === prefix + "stayvoice") {
+    if (!dinfo.owner.includes(message.author.id)) return;
+    if (message.member.voiceChannel) {
+      message.member.voiceChannel
+        .join()
+        .then(connection => {
+          message.reply("**DONE ..**!");
+        })
+        .catch(console.log);
+    } else {
+      message.reply("**- لازم تخش روم صوتي!**");
+    }
+  }
+});
+client19.on("message", message => {
+  if (!message.guild) return;
+  if (message.content === prefix + "stayvoice") {
+    if (!dinfo.owner.includes(message.author.id)) return;
+    if (message.member.voiceChannel) {
+      message.member.voiceChannel
+        .join()
+        .then(connection => {
+          message.reply("**DONE ..**!");
+        })
+        .catch(console.log);
+    } else {
+      message.reply("**- لازم تخش روم صوتي!**");
+    }
+  }
+});
+client20.on("message", message => {
+  if (!message.guild) return;
+  if (message.content === prefix + "stayvoice") {
+    if (!dinfo.owner.includes(message.author.id)) return;
+    if (message.member.voiceChannel) {
+      message.member.voiceChannel
+        .join()
+        .then(connection => {
+          message.reply("**DONE ..**!");
+        })
+        .catch(console.log);
+    } else {
+      message.reply("** **");
+    }
+  }
+});
+
+
+client18.on("message", message => {
+  if (!message.guild) return;
+  if (message.content === prefix + "stayvoice") {
+    if (!dinfo.owner.includes(message.author.id)) return;
+    if (message.member.voiceChannel) {
+      message.member.voiceChannel
+        .join()
+        .then(connection => {
+          message.reply("**DONE ..**!");
+        })
+        .catch(console.log);
+    } else {
+      message.reply("**- لازم تخش روم صوتي!**");
+    }
+  }
+});
+client19.on("message", message => {
+  if (!message.guild) return;
+  if (message.content === prefix + "stayvoice") {
+    if (!dinfo.owner.includes(message.author.id)) return;
+    if (message.member.voiceChannel) {
+      message.member.voiceChannel
+        .join()
+        .then(connection => {
+          message.reply("**DONE ..**!");
+        })
+        .catch(console.log);
+    } else {
+      message.reply("**- لازم تخش روم صوتي!**");
+    }
+  }
+});
+client20.on("message", message => {
+  if (!message.guild) return;
+  if (message.content === prefix + "stayvoice") {
+    if (!dinfo.owner.includes(message.author.id)) return;
+    if (message.member.voiceChannel) {
+      message.member.voiceChannel
+        .join()
+        .then(connection => {
+          message.reply("**DONE ..**!");
+        })
+        .catch(console.log);
+    } else {
+      message.reply("** **");
+    }
+  }
+});
+
+
+
+client18.on("message", message => {
+  if (!message.guild) return;
+  if (message.content === prefix + "stayvoice") {
+    if (!dinfo.owner.includes(message.author.id)) return;
+    if (message.member.voiceChannel) {
+      message.member.voiceChannel
+        .join()
+        .then(connection => {
+          message.reply("**DONE ..**!");
+        })
+        .catch(console.log);
+    } else {
+      message.reply("**- لازم تخش روم صوتي!**");
+    }
+  }
+});
+client19.on("message", message => {
+  if (!message.guild) return;
+  if (message.content === prefix + "stayvoice") {
+    if (!dinfo.owner.includes(message.author.id)) return;
+    if (message.member.voiceChannel) {
+      message.member.voiceChannel
+        .join()
+        .then(connection => {
+          message.reply("**DONE ..**!");
+        })
+        .catch(console.log);
+    } else {
+      message.reply("**- لازم تخش روم صوتي!**");
+    }
+  }
+});
+client20.on("message", message => {
+  if (!message.guild) return;
+  if (message.content === prefix + "stayvoice") {
+    if (!dinfo.owner.includes(message.author.id)) return;
+    if (message.member.voiceChannel) {
+      message.member.voiceChannel
+        .join()
+        .then(connection => {
+          message.reply("**DONE ..**!");
+        })
+        .catch(console.log);
+    } else {
+      message.reply("** **");
+    }
+  }
+});
+
+
+
+client18.on("message", message => {
+  if (!message.guild) return;
+  if (message.content === prefix + "stayvoice") {
+    if (!dinfo.owner.includes(message.author.id)) return;
+    if (message.member.voiceChannel) {
+      message.member.voiceChannel
+        .join()
+        .then(connection => {
+          message.reply("**DONE ..**!");
+        })
+        .catch(console.log);
+    } else {
+      message.reply("**- لازم تخش روم صوتي!**");
+    }
+  }
+});
+client19.on("message", message => {
+  if (!message.guild) return;
+  if (message.content === prefix + "stayvoice") {
+    if (!dinfo.owner.includes(message.author.id)) return;
+    if (message.member.voiceChannel) {
+      message.member.voiceChannel
+        .join()
+        .then(connection => {
+          message.reply("**DONE ..**!");
+        })
+        .catch(console.log);
+    } else {
+      message.reply("**- لازم تخش روم صوتي!**");
+    }
+  }
+});
+client20.on("message", message => {
+  if (!message.guild) return;
+  if (message.content === prefix + "stayvoice") {
+    if (!dinfo.owner.includes(message.author.id)) return;
+    if (message.member.voiceChannel) {
+      message.member.voiceChannel
+        .join()
+        .then(connection => {
+          message.reply("**DONE ..**!");
+        })
+        .catch(console.log);
+    } else {
+      message.reply("** **");
+    }
+  }
+});
+
+
+
+client18.on("message", message => {
+  if (!message.guild) return;
+  if (message.content === prefix + "stayvoice") {
+    if (!dinfo.owner.includes(message.author.id)) return;
+    if (message.member.voiceChannel) {
+      message.member.voiceChannel
+        .join()
+        .then(connection => {
+          message.reply("**DONE ..**!");
+        })
+        .catch(console.log);
+    } else {
+      message.reply("**- لازم تخش روم صوتي!**");
+    }
+  }
+});
+client19.on("message", message => {
+  if (!message.guild) return;
+  if (message.content === prefix + "stayvoice") {
+    if (!dinfo.owner.includes(message.author.id)) return;
+    if (message.member.voiceChannel) {
+      message.member.voiceChannel
+        .join()
+        .then(connection => {
+          message.reply("**DONE ..**!");
+        })
+        .catch(console.log);
+    } else {
+      message.reply("**- لازم تخش روم صوتي!**");
+    }
+  }
+});
+client20.on("message", message => {
+  if (!message.guild) return;
+  if (message.content === prefix + "stayvoice") {
+    if (!dinfo.owner.includes(message.author.id)) return;
+    if (message.member.voiceChannel) {
+      message.member.voiceChannel
+        .join()
+        .then(connection => {
+          message.reply("**DONE ..**!");
+        })
+        .catch(console.log);
+    } else {
+      message.reply("** **");
+    }
+  }
+});
+
+
+client18.on("message", message => {
+  if (!message.guild) return;
+  if (message.content === prefix + "stayvoice") {
+    if (!dinfo.owner.includes(message.author.id)) return;
+    if (message.member.voiceChannel) {
+      message.member.voiceChannel
+        .join()
+        .then(connection => {
+          message.reply("**DONE ..**!");
+        })
+        .catch(console.log);
+    } else {
+      message.reply("**- لازم تخش روم صوتي!**");
+    }
+  }
+});
+client19.on("message", message => {
+  if (!message.guild) return;
+  if (message.content === prefix + "stayvoice") {
+    if (!dinfo.owner.includes(message.author.id)) return;
+    if (message.member.voiceChannel) {
+      message.member.voiceChannel
+        .join()
+        .then(connection => {
+          message.reply("**DONE ..**!");
+        })
+        .catch(console.log);
+    } else {
+      message.reply("**- لازم تخش روم صوتي!**");
+    }
+  }
+});
+client20.on("message", message => {
+  if (!message.guild) return;
+  if (message.content === prefix + "stayvoice") {
+    if (!dinfo.owner.includes(message.author.id)) return;
+    if (message.member.voiceChannel) {
+      message.member.voiceChannel
+        .join()
+        .then(connection => {
+          message.reply("**DONE ..**!");
+        })
+        .catch(console.log);
+    } else {
+      message.reply("** **");
+    }
+  }
+});
+
+
+
+
+client18.on("message", message => {
+  if (!message.guild) return;
+  if (message.content === prefix + "stayvoice") {
+    if (!dinfo.owner.includes(message.author.id)) return;
+    if (message.member.voiceChannel) {
+      message.member.voiceChannel
+        .join()
+        .then(connection => {
+          message.reply("**DONE ..**!");
+        })
+        .catch(console.log);
+    } else {
+      message.reply("**- لازم تخش روم صوتي!**");
+    }
+  }
+});
+client19.on("message", message => {
+  if (!message.guild) return;
+  if (message.content === prefix + "stayvoice") {
+    if (!dinfo.owner.includes(message.author.id)) return;
+    if (message.member.voiceChannel) {
+      message.member.voiceChannel
+        .join()
+        .then(connection => {
+          message.reply("**DONE ..**!");
+        })
+        .catch(console.log);
+    } else {
+      message.reply("**- لازم تخش روم صوتي!**");
+    }
+  }
+});
+
+
+
+
+
+
 // ======= [ StayVoice - MODE END  ] ======== //
-
-
-
-
-// ======= [ SPAM - MODE  ] ======== //
-
-client.on("warn", console.warn);
-client.on("error", console.error);
-const child_process = require("child_process");
-client.on("message", message => {
-  if (message.content === prefix + "spam on") {
-    if (din
 
 // ======= [ Credits - INFO ] ======== //
 
