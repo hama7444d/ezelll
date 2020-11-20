@@ -6,7 +6,7 @@ app.get("/", (request, response) => {
 });
 app.listen(process.env.PORT);
 setInterval(() => {
-  http.get(`http://spam-1-20.glitch.me/`);
+  http.get(`https://superb-satin-traffic.glitch.me`);
 }, 280000);
  
 // طبعا الكود هيبقا صعب انك تفهم لوحدك لنو معقد شويتين لكن فكرتو سهلة وحاولت اوفرلكم حاجات كتير مثل انك تقدر تشغل 20 توكانات ف الكود ده
@@ -2442,4 +2442,4 @@ client16.login(process.env.KahTOKEN16);
 client17.login(process.env.KahTOKEN17);
 client18.login(process.env.KahTOKEN18);
 client19.login(process.env.KahTOKEN19);
-client20.login(process.env.KahTOKEN20);
+client20.login(process.env.KahTOKEN2);
