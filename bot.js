@@ -39,46 +39,7 @@ const client19 = new Discord.Client(); // كههربا (حسن ياسر)
 const client20 = new Discord.Client();
  // كههربا (حسن ياسر)
 const help = (`**
-       \`\`\`  Main Commands  :   \`\`\`
-                  
-- ${config.prefix}spam on - لتشغيل الاسبام 
-         
-- ${config.prefix}spam off - لايقاف الاسبام
-         
-- ${config.groupnm}[NumberACC] - لاستخدام امر تحويل الفلوس (Say CODE)
-
-- ${config.prefix}react - لضافة ريأكت علي اي رسالة
-         
-- ${config.prefix}stayvoice - لتثبيت الحسابات في روم صوتي
-
-- ${config.prefix}randomava - لضافة صورة عشوائي لكل حساب
-         
-- ${config.prefix}join [LINK INVITE] - لـ اضافة الحسابات في اي سيرفر 
-
-- ${config.prefix}friend [ID USER] - لـ ارسال طلبات صداقة بـ الحسابات
-
-- ${config.prefix}dly - لجمع المرتب اليومي من جميع الحسابات 
-
-- ${config.prefix}prof - لظهار جميع معلومات الحسابات في البروبوت
-
-- ${config.prefix}cc - لظهار رصيد الحسابات في البروبوت
-
-         \`\`\` Admin Commands : \`\`\` 
-                  
-- ${config.prefix}setownerID [ID NEW OWNER] - لـ تغير ايدي الصاحب
-                  
-- ${config.prefix}setserverID [ID SERVER SPAM] - لـ تحديد سيرفر الاسبام
-                  
-- ${config.prefix}setchannelID [ID CHANNEL SPAM] - لـ تحديد روم الاسبام
-                  
-- ${config.prefix}settimeSpam [TIME SPAM] - لتحديد سرعة الاسبام
-                  
-- ${config.prefix}settimeStop [TIME STOP SPAM] - لتحديد مدة توقف الاسبام بعد تشغيلة
-                  
-- ${config.prefix}reload - لـ اعادة تشغيل البوت  بعد تغير بيانات JSON (مهم جدا بعد م تستخدم اوامر الادمن)
-
-         
-**`)
+       \`\`\`  Main Commands  :   \`\`\`)
  // كههربا (حسن ياسر)
 
 const err = (`** \`\`\`  [ERORR] : لازم تسوي رتبة بـ اسم  \`\`\`
