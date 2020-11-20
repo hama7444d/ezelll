@@ -16,10 +16,10 @@ const fs = require("fs");
 const cmd = require("node-cmd");
 const config = require("./SADAM.json");
 const prefix = config.prefix;
-///////////////////////////////////////////
+/////////////////// {DAST LERA MADA }////////////////////////
 
 
-const client = new Discord.client();
+const client  = new Discord.client();
 const client2 = new Discord.Client();
 const client3 = new Discord.Client();
 const client4 = new Discord.Client();
@@ -30,8 +30,14 @@ const client8 = new Discord.Client();
 const client9 = new Discord.Client();
 const client10 = new Discord.Client();
 const client11 = new Discord.Client();
-
-
+const client12 = new Discord.client();
+const client13 = new Discord.Client();
+const client14 = new Discord.Client();
+const client15 = new Discord.Client();
+const client16 = new Discord.Client();
+const client17 = new Discord.Client();
+const client18 = new Discord.Client();
+const client19 = new Discord.Client();
 const client20 = new Discord.client();
 const client21 = new Discord.Client();
 const client22 = new Discord.Client();
@@ -114,44 +120,9 @@ const client98 = new Discord.Client();
 const client99 = new Discord.Client(); 
 const client100 = new Discord.Client();
 
+/////////////////// {DAST LERA MADA }////////////////////////
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+  
 
 
 // كههربا (حسن ياسر)
@@ -2951,29 +2922,113 @@ client20.on("message", message => {
   if (message.content === prefix + "prof") {
     message.channel.send("#profile");
   }
-}); // جمــيع الحقوق محفوظة لدي "Kahrbaa"
+}); 
 
-// ======= [ PROFILE - INFO end ] ======== //
+// ======= [ DAST LERA MADA ] ======== //
 
-// جمــيع الحقوق محفوظة لدي "Kahrbaa"
 
-client.login(process.env.KahTOKEN);
-client2.login(process.env.KahTOKEN2);
-client3.login(process.env.KahTOKEN3); // جمــيع الحقوق محفوظة لدي "Kahrbaa"
-client4.login(process.env.KahTOKEN4);
-client5.login(process.env.KahTOKEN5);
-client6.login(process.env.KahTOKEN6);
-client7.login(process.env.KahTOKEN7);
-client8.login(process.env.KahTOKEN8);
-client9.login(process.env.KahTOKEN9);
-client10.login(process.env.KahTOKEN10); // جمــيع الحقوق محفوظة لدي "Kahrbaa"
-client11.login(process.env.KahTOKEN11);
-client12.login(process.env.KahTOKEN12);
-client13.login(process.env.KahTOKEN13); // جمــيع الحقوق محفوظة لدي "Kahrbaa"
-client14.login(process.env.KahTOKEN14);
-client15.login(process.env.KahTOKEN15);
-client16.login(process.env.KahTOKEN16);
-client17.login(process.env.KahTOKEN17);
-client18.login(process.env.KahTOKEN18);
-client19.login(process.env.KahTOKEN19);
-client20.login(process.env.KahTOKEN20);
+
+client.login(process.env.sadamTOKEN);
+client2.login(process.env.sadamTOKEN2);
+client3.login(process.env.sadamTOKEN3); 
+client4.login(process.env.sadamTOKEN4);
+client5.login(process.env.sadamTOKEN5);
+client6.login(process.env.sadamTOKEN6);
+client7.login(process.env.sadamTOKEN7);
+client8.login(process.env.sadamTOKEN8);
+client9.login(process.env.sadamTOKEN9);
+client10.login(process.env.sadamTOKEN10); 
+client11.login(process.env.sadamTOKEN11);
+client12.login(process.env.sadamTOKEN12);
+client13.login(process.env.sadamTOKEN13); 
+client14.login(process.env.sadamTOKEN14);
+client15.login(process.env.sadamTOKEN15);
+client16.login(process.env.sadamTOKEN16);
+client17.login(process.env.sadamTOKEN17);
+client18.login(process.env.sadamTOKEN18);
+client19.login(process.env.sadamTOKEN19);
+client20.login(process.env.sadamTOKEN20);
+
+client.login(process.env.sadamTOKEN);
+client2.login(process.env.sadamTOKEN2);
+client3.login(process.env.sadamTOKEN3); 
+client4.login(process.env.sadamTOKEN4);
+client5.login(process.env.sadamTOKEN5);
+client6.login(process.env.sadamTOKEN6);
+client7.login(process.env.sadamTOKEN7);
+client8.login(process.env.sadamTOKEN8);
+client9.login(process.env.sadamTOKEN9);
+client10.login(process.env.sadamTOKEN10); 
+client11.login(process.env.sadamTOKEN11);
+client12.login(process.env.sadamTOKEN12);
+client13.login(process.env.sadamTOKEN13); 
+client14.login(process.env.sadamTOKEN14);
+client15.login(process.env.sadamTOKEN15);
+client16.login(process.env.sadamTOKEN16);
+client17.login(process.env.sadamTOKEN17);
+client18.login(process.env.sadamTOKEN18);
+client19.login(process.env.sadamTOKEN19);
+client20.login(process.env.sadamTOKEN20);
+
+client.login(process.env.sadamTOKEN);
+client2.login(process.env.sadamTOKEN2);
+client3.login(process.env.sadamTOKEN3); 
+client4.login(process.env.sadamTOKEN4);
+client5.login(process.env.sadamTOKEN5);
+client6.login(process.env.sadamTOKEN6);
+client7.login(process.env.sadamTOKEN7);
+client8.login(process.env.sadamTOKEN8);
+client9.login(process.env.sadamTOKEN9);
+client10.login(process.env.sadamTOKEN10); 
+client11.login(process.env.sadamTOKEN11);
+client12.login(process.env.sadamTOKEN12);
+client13.login(process.env.sadamTOKEN13); 
+client14.login(process.env.sadamTOKEN14);
+client15.login(process.env.sadamTOKEN15);
+client16.login(process.env.sadamTOKEN16);
+client17.login(process.env.sadamTOKEN17);
+client18.login(process.env.sadamTOKEN18);
+client19.login(process.env.sadamTOKEN19);
+client20.login(process.env.sadamTOKEN20);
+
+client.login(process.env.sadamTOKEN);
+client2.login(process.env.sadamTOKEN2);
+client3.login(process.env.sadamTOKEN3); 
+client4.login(process.env.sadamTOKEN4);
+client5.login(process.env.sadamTOKEN5);
+client6.login(process.env.sadamTOKEN6);
+client7.login(process.env.sadamTOKEN7);
+client8.login(process.env.sadamTOKEN8);
+client9.login(process.env.sadamTOKEN9);
+client10.login(process.env.sadamTOKEN10); 
+client11.login(process.env.sadamTOKEN11);
+client12.login(process.env.sadamTOKEN12);
+client13.login(process.env.sadamTOKEN13); 
+client14.login(process.env.sadamTOKEN14);
+client15.login(process.env.sadamTOKEN15);
+client16.login(process.env.sadamTOKEN16);
+client17.login(process.env.sadamTOKEN17);
+client18.login(process.env.sadamTOKEN18);
+client19.login(process.env.sadamTOKEN19);
+client20.login(process.env.sadamTOKEN20);
+
+client.login(process.env.sadamTOKEN);
+client2.login(process.env.sadamTOKEN2);
+client3.login(process.env.sadamTOKEN3); 
+client4.login(process.env.sadamTOKEN4);
+client5.login(process.env.sadamTOKEN5);
+client6.login(process.env.sadamTOKEN6);
+client7.login(process.env.sadamTOKEN7);
+client8.login(process.env.sadamTOKEN8);
+client9.login(process.env.sadamTOKEN9);
+client10.login(process.env.sadamTOKEN10); 
+client11.login(process.env.sadamTOKEN11);
+client12.login(process.env.sadamTOKEN12);
+client13.login(process.env.sadamTOKEN13); 
+client14.login(process.env.sadamTOKEN14);
+client15.login(process.env.sadamTOKEN15);
+client16.login(process.env.sadamTOKEN16);
+client17.login(process.env.sadamTOKEN17);
+client18.login(process.env.sadamTOKEN18);
+client19.login(process.env.sadamTOKEN19);
+client20.login(process.env.sadamTOKEN20);
