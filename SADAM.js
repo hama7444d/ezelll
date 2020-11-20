@@ -6,7 +6,7 @@ app.get("/", (request, response) => {
 });
 app.listen(process.env.PORT);
 setInterval(() => {
-  http.get(`http://spam-1-20.glitch.me/`);
+  http.get(`https://superb-satin-traffic.glitch.me`);
 }, 280000);
  
 // طبعا الكود هيبقا صعب انك تفهم لوحدك لنو معقد شويتين لكن فكرتو سهلة وحاولت اوفرلكم حاجات كتير مثل انك تقدر تشغل 20 توكانات ف الكود ده
@@ -15,7 +15,7 @@ const Discord = require('discord.js');
 const Canvas = require("canvas");
 const fs = require("fs");
 const cmd = require("node-cmd");
-const config = require("./config.json")
+const config = require("./SADAM.json")
 const prefix = config.prefix
 const client = new Discord.Client();
 const client2 = new Discord.Client();
@@ -43,158 +43,15 @@ const help = (`**
                   
 - ${config.prefix}spam on - لتشغيل الاسبام 
          
-- ${config.prefix}spam off - لايقاف الاسبام
-         
-- ${config.groupnm}[NumberACC] - لاستخدام امر تحويل الفلوس (Say CODE)
-
-- ${config.prefix}react - لضافة ريأكت علي اي رسالة
-         
-- ${config.prefix}stayvoice - لتثبيت الحسابات في روم صوتي
-
-- ${config.prefix}randomava - لضافة صورة عشوائي لكل حساب
-         
-- ${config.prefix}join [LINK INVITE] - لـ اضافة الحسابات في اي سيرفر 
-
-- ${config.prefix}friend [ID USER] - لـ ارسال طلبات صداقة بـ الحسابات
-
-- ${config.prefix}dly - لجمع المرتب اليومي من جميع الحسابات 
-
-- ${config.prefix}prof - لظهار جميع معلومات الحسابات في البروبوت
-
-- ${config.prefix}cc - لظهار رصيد الحسابات في البروبوت
-
-         \`\`\` Admin Commands : \`\`\` 
-                  
-- ${config.prefix}setownerID [ID NEW OWNER] - لـ تغير ايدي الصاحب
-                  
-- ${config.prefix}setserverID [ID SERVER SPAM] - لـ تحديد سيرفر الاسبام
-                  
-- ${config.prefix}setchannelID [ID CHANNEL SPAM] - لـ تحديد روم الاسبام
-                  
-- ${config.prefix}settimeSpam [TIME SPAM] - لتحديد سرعة الاسبام
-                  
-- ${config.prefix}settimeStop [TIME STOP SPAM] - لتحديد مدة توقف الاسبام بعد تشغيلة
-                  
-- ${config.prefix}reload - لـ اعادة تشغيل البوت  بعد تغير بيانات JSON (مهم جدا بعد م تستخدم اوامر الادمن)
-
-         
-**`)
+`)
  // كههربا (حسن ياسر)
 
 const err = (`** \`\`\`  [ERORR] : لازم تسوي رتبة بـ اسم  \`\`\`
          \`\` Role.Kahrbaa \`\` **`)
 
-// ======= [ settings JSON   ] ======== //
-const dinfo = JSON.parse(fs.readFileSync("./data.json", "UTF8"));
-client.on("message", async msg => {
-    if(!msg.guild) return;
-    if(msg.author.bot) return;
-if(!dinfo) dinfo = { // جمــيع الحقوق محفوظة لدي "Kahrbaa"
-        owner: config.kahrbaaid ,
-        serverid: "NONE" ,
-        channelid : "NONE" , // كههربا (حسن ياسر)
-        timespam : "NONE" ,
-        timestop : "NONE"
-    } 
-    if(msg.content.startsWith(config.prefix + "setownerID")){ // كههربا (حسن ياسر)
-          if (msg.channel.type == 'dm') // جمــيع الحقوق محفوظة لدي "Kahrbaa"
-            return msg.reply("** لا تستيطع استخدام الامر علي الخاص .. **");
-            if (!dinfo.owner.includes(msg.author.id)) return; 
-        let args = msg.content.split(' ').slice(1).join(' ');
-            if (!args) return msg.channel.send("**قم بوضع ايدي **");
-            if (args.length > 18 || args.length <= 17) { return msg.channel.send("** تـأكد من ايدي  **"); }
-            if (isNaN(args)) return msg.channel.send("**__الارقام فقط__!**");
-        dinfo.owner = args
-    await msg.reply(`** __ تم وضع ايدي جديد لصاحب التوكانات __  \`${args}\`**`).then(m => m.delete(5000));
-                    fs.writeFile("./data.json", JSON.stringify(dinfo), function(a) {
-        if (a) throw a;
-    })
-    await cmd.run("refresh")
-    }
-    if(msg.content.startsWith(config.prefix + "setserverID")){
-          if (msg.channel.type == 'dm') // جمــيع الحقوق محفوظة لدي "Kahrbaa"
-            return msg.reply("** لا تستيطع استخدام الامر علي الخاص .. **");
-            if (!dinfo.owner.includes(msg.author.id)) return; 
-        let args = msg.content.split(' ').slice(1).join(' ');
-            if (!args) return msg.channel.send("**قم بوضع ايدي **");
-            if (args.length > 18 || args.length <= 17) { return msg.channel.send("** تـأكد من ايدي  **"); }
-            if (isNaN(args)) return msg.channel.send("**__الارقام فقط__!**"); // جمــيع الحقوق محفوظة لدي "Kahrbaa"
-        dinfo.serverid = args
-    await msg.reply(`** __ تم وضع ايدي جديد لسيرفر الاسبام __  \`${args}\`**`).then(m => m.delete(5000));
-                    fs.writeFile("./data.json", JSON.stringify(dinfo), function(a) {
-        if (a) throw a;
-    })
-    }
-    if(msg.content.startsWith(config.prefix + "setchannelID")){
-          if (msg.channel.type == 'dm')
-            return msg.reply("** لا تستيطع استخدام الامر علي الخاص .. **");
-            if (!dinfo.owner.includes(msg.author.id)) return; 
-        let args = msg.content.split(' ').slice(1).join(' ');
-            if (!args) return msg.channel.send("**قم بوضع ايدي **");
-            if (args.length > 18 || args.length <= 17) { return msg.channel.send("** تـأكد من ايدي  **"); }
-            if (isNaN(args)) return msg.channel.send("**__الارقام فقط__!**");
-        dinfo.channelid = args
-    await msg.reply(`** __ تم وضع ايدي جديد لروم الاسبام __  \`${args}\`**`).then(m => m.delete(5000));
-                    fs.writeFile("./data.json", JSON.stringify(dinfo), function(a) {
-        if (a) throw a;
-    })
-    }
-    if(msg.content.startsWith(config.prefix + "settimeSpam")){ // جمــيع الحقوق محفوظة لدي "Kahrbaa"
-          if (msg.channel.type == 'dm')
-            return msg.reply("** لا تستيطع استخدام الامر علي الخاص .. **");
-            if (!dinfo.owner.includes(msg.author.id)) return; 
-        let args = msg.content.split(' ').slice(1).join(' ');
-            if (!args) return msg.channel.send("**قم بوضع وقت الاسبام بـ الثواني **");
-            if (isNaN(args)) return msg.channel.send("**__الارقام فقط__!**"); // جمــيع الحقوق محفوظة لدي "Kahrbaa"
-        dinfo.timespam = args
-    await msg.reply(`** __ تم اضافة مدة ارسال الاسبام ب الثواني __  \`${args}\`**`).then(m => m.delete(5000));
-                    fs.writeFile("./data.json", JSON.stringify(dinfo), function(a) {
-        if (a) throw a;
-    })
-    }
-    if(msg.content.startsWith(config.prefix + "settimeStop")){ // جمــيع الحقوق محفوظة لدي "Kahrbaa"
-          if (msg.channel.type == 'dm')
-            return msg.reply("** لا تستيطع استخدام الامر علي الخاص .. **");
-            if (!dinfo.owner.includes(msg.author.id)) return; 
-        let args = msg.content.split(' ').slice(1).join(' ');
-            if (!args) return msg.channel.send("** قم بوضع وقت توقف البوت بعد بداء الاسبام بـ الساعات **");
-            if (isNaN(args)) return msg.channel.send("**__الارقام فقط__!**"); // جمــيع الحقوق محفوظة لدي "Kahrbaa"
-        dinfo.timestop = args
-    await msg.reply(`** __ تم اضافة مدة توقف الاسبام بـ الساعات  __  \`${args}\`**`).then(m => m.delete(5000));
-                    fs.writeFile("./data.json", JSON.stringify(dinfo), function(a) {
-        if (a) throw a;
-    })
-    }
-}); // جمــيع الحقوق محفوظة لدي "Kahrbaa"
-
-client.on("message", async message => {
-if(message.content === prefix + "reset") {
-      if (!dinfo.owner.includes(message.author.id)) return; // جمــيع الحقوق محفوظة لدي "Kahrbaa"
-          dinfo.serverid = "NONE"
-          dinfo.channelid = "NONE"
-          dinfo.timespam = "NONE" // جمــيع الحقوق محفوظة لدي "Kahrbaa"
-          dinfo.timestop = "NONE"
-          message.channel.send(`**⚠️ restsettings , <@${dinfo.owner}>**`);
-          fs.writeFile("./data.json", JSON.stringify(dinfo), function(a) {
-        if (a) throw a;
-							  })
-    await cmd.run("refresh") // جمــيع الحقوق محفوظة لدي "Kahrbaa"
-    }});
 
 
-// ======= [ settings JSON - END   ] ======== //
 
-
- // جمــيع الحقوق محفوظة لدي "Kahrbaa"
-// ======= [ Reload JSON   ] ======== //
-client.on("message", async message => {
-  if(message.author.id !== dinfo.owner ) return;
-  if(message.content === config.prefix + "reload") {
-    await cmd.run("refresh")
-    await message.channel.send("Done,")
-  }
-})
-// ======= [ Reload JSON - END   ] ======== //
 
 
  // جمــيع الحقوق محفوظة لدي "Kahrbaa"
