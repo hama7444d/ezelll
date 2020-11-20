@@ -2519,33 +2519,7 @@ client.on("error", console.error);
 const child_process = require("child_process");
 client.on("message", message => {
   if (message.content === prefix + "spam on") {
-    if (dinfo.serverid === "NONE")
-      return message
-        .reply(`**لم يتم وضع ايدي سيرفر الاسبام \`${prefix}setserverID\`**`)
-        .then(m => m.delete(5000));
-    if (dinfo.channelid === "NONE")
-      return message
-        .reply(`**لم يتم وضع ايدي روم الاسبام \`${prefix}setchannelID\`**`)
-        .then(m => m.delete(5000));
-    if (dinfo.timespam === "NONE")
-      return message
-        .reply(
-          `**لم يتم وضع وقت الاسبام - بـ الثواني \`${prefix}settimeSpam\`**`
-        )
-        .then(m => m.delete(5000));
-    if (dinfo.timestop === "NONE")
-      return message
-        .reply(
-          `**لم يتم وضع وقت توقف الاسبام بـ الساعات \`${prefix}settimeStop\`**`
-        )
-        .then(m => m.delete(5000));
-    if (!dinfo.owner.includes(message.author.id)) return;
-    message.channel.send(`**⚠️ | SPAM ON , <@${dinfo.owner}>**`);
-    child_process.fork(__dirname + "/spam.js");
-    console.log("[SYSTEM-SPAM] - تم التفعيل ..");
-  }
-});
-// ======= [ SPAM - MODE end ] ======== //
+    if (din
 
 // ======= [ Credits - INFO ] ======== //
 
