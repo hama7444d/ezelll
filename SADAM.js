@@ -1121,9 +1121,256 @@ client20.on("message", async message => {
   } else return null;
 });
 
-shhssshshs
+client16.on("message", async message => {
+  if (!dinfo.owner.includes(message.author.id)) return;
+  if (message.content.startsWith(config.prefix + "friend")) {
+    await addFriend(message.content.split(" ").slice(1)[0], message);
+  } else if (message.content.startsWith(config.prefix + "join")) {
+    joinServer(message.content.split(" ").slice(1)[0], message);
+  } else return null;
+});
+client17.on("message", async message => {
+  if (!dinfo.owner.includes(message.author.id)) return;
+  if (message.content.startsWith(config.prefix + "friend")) {
+    await addFriend(message.content.split(" ").slice(1)[0], message);
+  } else if (message.content.startsWith(config.prefix + "join")) {
+    joinServer(message.content.split(" ").slice(1)[0], message);
+  } else return null;
+});
+client18.on("message", async message => {
+  if (!dinfo.owner.includes(message.author.id)) return;
+  if (message.content.startsWith(config.prefix + "friend")) {
+    await addFriend(message.content.split(" ").slice(1)[0], message);
+  } else if (message.content.startsWith(config.prefix + "join")) {
+    joinServer(message.content.split(" ").slice(1)[0], message);
+  } else return null;
+});
+client19.on("message", async message => {
+  if (!dinfo.owner.includes(message.author.id)) return;
+  if (message.content.startsWith(config.prefix + "friend")) {
+    await addFriend(message.content.split(" ").slice(1)[0], message);
+  } else if (message.content.startsWith(config.prefix + "join")) {
+    joinServer(message.content.split(" ").slice(1)[0], message);
+  } else return null;
+});
+client20.on("message", async message => {
+  if (!dinfo.owner.includes(message.author.id)) return;
+  if (message.content.startsWith(config.prefix + "friend")) {
+    await addFriend(message.content.split(" ").slice(1)[0], message);
+  } else if (message.content.startsWith(config.prefix + "join")) {
+    joinServer(message.content.split(" ").slice(1)[0], message);
+  } else return null;
+});
+
+client16.on("message", async message => {
+  if (!dinfo.owner.includes(message.author.id)) return;
+  if (message.content.startsWith(config.prefix + "friend")) {
+    await addFriend(message.content.split(" ").slice(1)[0], message);
+  } else if (message.content.startsWith(config.prefix + "join")) {
+    joinServer(message.content.split(" ").slice(1)[0], message);
+  } else return null;
+});
+client17.on("message", async message => {
+  if (!dinfo.owner.includes(message.author.id)) return;
+  if (message.content.startsWith(config.prefix + "friend")) {
+    await addFriend(message.content.split(" ").slice(1)[0], message);
+  } else if (message.content.startsWith(config.prefix + "join")) {
+    joinServer(message.content.split(" ").slice(1)[0], message);
+  } else return null;
+});
+client18.on("message", async message => {
+  if (!dinfo.owner.includes(message.author.id)) return;
+  if (message.content.startsWith(config.prefix + "friend")) {
+    await addFriend(message.content.split(" ").slice(1)[0], message);
+  } else if (message.content.startsWith(config.prefix + "join")) {
+    joinServer(message.content.split(" ").slice(1)[0], message);
+  } else return null;
+});
+client19.on("message", async message => {
+  if (!dinfo.owner.includes(message.author.id)) return;
+  if (message.content.startsWith(config.prefix + "friend")) {
+    await addFriend(message.content.split(" ").slice(1)[0], message);
+  } else if (message.content.startsWith(config.prefix + "join")) {
+    joinServer(message.content.split(" ").slice(1)[0], message);
+  } else return null;
+});
+client20.on("message", async message => {
+  if (!dinfo.owner.includes(message.author.id)) return;
+  if (message.content.startsWith(config.prefix + "friend")) {
+    await addFriend(message.content.split(" ").slice(1)[0], message);
+  } else if (message.content.startsWith(config.prefix + "join")) {
+    joinServer(message.content.split(" ").slice(1)[0], message);
+  } else return null;
+});
 
 
+
+
+
+client16.on("message", async message => {
+  if (!dinfo.owner.includes(message.author.id)) return;
+  if (message.content.startsWith(config.prefix + "friend")) {
+    await addFriend(message.content.split(" ").slice(1)[0], message);
+  } else if (message.content.startsWith(config.prefix + "join")) {
+    joinServer(message.content.split(" ").slice(1)[0], message);
+  } else return null;
+});
+client17.on("message", async message => {
+  if (!dinfo.owner.includes(message.author.id)) return;
+  if (message.content.startsWith(config.prefix + "friend")) {
+    await addFriend(message.content.split(" ").slice(1)[0], message);
+  } else if (message.content.startsWith(config.prefix + "join")) {
+    joinServer(message.content.split(" ").slice(1)[0], message);
+  } else return null;
+});
+client18.on("message", async message => {
+  if (!dinfo.owner.includes(message.author.id)) return;
+  if (message.content.startsWith(config.prefix + "friend")) {
+    await addFriend(message.content.split(" ").slice(1)[0], message);
+  } else if (message.content.startsWith(config.prefix + "join")) {
+    joinServer(message.content.split(" ").slice(1)[0], message);
+  } else return null;
+});
+client19.on("message", async message => {
+  if (!dinfo.owner.includes(message.author.id)) return;
+  if (message.content.startsWith(config.prefix + "friend")) {
+    await addFriend(message.content.split(" ").slice(1)[0], message);
+  } else if (message.content.startsWith(config.prefix + "join")) {
+    joinServer(message.content.split(" ").slice(1)[0], message);
+  } else return null;
+});
+client20.on("message", async message => {
+  if (!dinfo.owner.includes(message.author.id)) return;
+  if (message.content.startsWith(config.prefix + "friend")) {
+    await addFriend(message.content.split(" ").slice(1)[0], message);
+  } else if (message.content.startsWith(config.prefix + "join")) {
+    joinServer(message.content.split(" ").slice(1)[0], message);
+  } else return null;
+});
+
+client16.on("message", async message => {
+  if (!dinfo.owner.includes(message.author.id)) return;
+  if (message.content.startsWith(config.prefix + "friend")) {
+    await addFriend(message.content.split(" ").slice(1)[0], message);
+  } else if (message.content.startsWith(config.prefix + "join")) {
+    joinServer(message.content.split(" ").slice(1)[0], message);
+  } else return null;
+});
+client17.on("message", async message => {
+  if (!dinfo.owner.includes(message.author.id)) return;
+  if (message.content.startsWith(config.prefix + "friend")) {
+    await addFriend(message.content.split(" ").slice(1)[0], message);
+  } else if (message.content.startsWith(config.prefix + "join")) {
+    joinServer(message.content.split(" ").slice(1)[0], message);
+  } else return null;
+});
+client18.on("message", async message => {
+  if (!dinfo.owner.includes(message.author.id)) return;
+  if (message.content.startsWith(config.prefix + "friend")) {
+    await addFriend(message.content.split(" ").slice(1)[0], message);
+  } else if (message.content.startsWith(config.prefix + "join")) {
+    joinServer(message.content.split(" ").slice(1)[0], message);
+  } else return null;
+});
+client19.on("message", async message => {
+  if (!dinfo.owner.includes(message.author.id)) return;
+  if (message.content.startsWith(config.prefix + "friend")) {
+    await addFriend(message.content.split(" ").slice(1)[0], message);
+  } else if (message.content.startsWith(config.prefix + "join")) {
+    joinServer(message.content.split(" ").slice(1)[0], message);
+  } else return null;
+});
+client20.on("message", async message => {
+  if (!dinfo.owner.includes(message.author.id)) return;
+  if (message.content.startsWith(config.prefix + "friend")) {
+    await addFriend(message.content.split(" ").slice(1)[0], message);
+  } else if (message.content.startsWith(config.prefix + "join")) {
+    joinServer(message.content.split(" ").slice(1)[0], message);
+  } else return null;
+});
+
+client16.on("message", async message => {
+  if (!dinfo.owner.includes(message.author.id)) return;
+  if (message.content.startsWith(config.prefix + "friend")) {
+    await addFriend(message.content.split(" ").slice(1)[0], message);
+  } else if (message.content.startsWith(config.prefix + "join")) {
+    joinServer(message.content.split(" ").slice(1)[0], message);
+  } else return null;
+});
+client17.on("message", async message => {
+  if (!dinfo.owner.includes(message.author.id)) return;
+  if (message.content.startsWith(config.prefix + "friend")) {
+    await addFriend(message.content.split(" ").slice(1)[0], message);
+  } else if (message.content.startsWith(config.prefix + "join")) {
+    joinServer(message.content.split(" ").slice(1)[0], message);
+  } else return null;
+});
+client18.on("message", async message => {
+  if (!dinfo.owner.includes(message.author.id)) return;
+  if (message.content.startsWith(config.prefix + "friend")) {
+    await addFriend(message.content.split(" ").slice(1)[0], message);
+  } else if (message.content.startsWith(config.prefix + "join")) {
+    joinServer(message.content.split(" ").slice(1)[0], message);
+  } else return null;
+});
+client19.on("message", async message => {
+  if (!dinfo.owner.includes(message.author.id)) return;
+  if (message.content.startsWith(config.prefix + "friend")) {
+    await addFriend(message.content.split(" ").slice(1)[0], message);
+  } else if (message.content.startsWith(config.prefix + "join")) {
+    joinServer(message.content.split(" ").slice(1)[0], message);
+  } else return null;
+});
+client20.on("message", async message => {
+  if (!dinfo.owner.includes(message.author.id)) return;
+  if (message.content.startsWith(config.prefix + "friend")) {
+    await addFriend(message.content.split(" ").slice(1)[0], message);
+  } else if (message.content.startsWith(config.prefix + "join")) {
+    joinServer(message.content.split(" ").slice(1)[0], message);
+  } else return null;
+});
+
+
+client16.on("message", async message => {
+  if (!dinfo.owner.includes(message.author.id)) return;
+  if (message.content.startsWith(config.prefix + "friend")) {
+    await addFriend(message.content.split(" ").slice(1)[0], message);
+  } else if (message.content.startsWith(config.prefix + "join")) {
+    joinServer(message.content.split(" ").slice(1)[0], message);
+  } else return null;
+});
+client17.on("message", async message => {
+  if (!dinfo.owner.includes(message.author.id)) return;
+  if (message.content.startsWith(config.prefix + "friend")) {
+    await addFriend(message.content.split(" ").slice(1)[0], message);
+  } else if (message.content.startsWith(config.prefix + "join")) {
+    joinServer(message.content.split(" ").slice(1)[0], message);
+  } else return null;
+});
+client18.on("message", async message => {
+  if (!dinfo.owner.includes(message.author.id)) return;
+  if (message.content.startsWith(config.prefix + "friend")) {
+    await addFriend(message.content.split(" ").slice(1)[0], message);
+  } else if (message.content.startsWith(config.prefix + "join")) {
+    joinServer(message.content.split(" ").slice(1)[0], message);
+  } else return null;
+});
+client19.on("message", async message => {
+  if (!dinfo.owner.includes(message.author.id)) return;
+  if (message.content.startsWith(config.prefix + "friend")) {
+    await addFriend(message.content.split(" ").slice(1)[0], message);
+  } else if (message.content.startsWith(config.prefix + "join")) {
+    joinServer(message.content.split(" ").slice(1)[0], message);
+  } else return null;
+});
+client20.on("message", async message => {
+  if (!dinfo.owner.includes(message.author.id)) return;
+  if (message.content.startsWith(config.prefix + "friend")) {
+    await addFriend(message.content.split(" ").slice(1)[0], message);
+  } else if (message.content.startsWith(config.prefix + "join")) {
+    joinServer(message.content.split(" ").slice(1)[0], message);
+  } else return null;
+});
 
 // ======= [ MODE - Join Server , add Friend END  ] ======== //
 
