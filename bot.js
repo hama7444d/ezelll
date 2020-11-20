@@ -6,7 +6,7 @@ app.get("/", (request, response) => {
 });
 app.listen(process.env.PORT);
 setInterval(() => {
-  http.get(`https://superb-satin-traffic.glitch.me`);
+  http.get(`http://spam-1-20.glitch.me/`);
 }, 280000);
  
 // طبعا الكود هيبقا صعب انك تفهم لوحدك لنو معقد شويتين لكن فكرتو سهلة وحاولت اوفرلكم حاجات كتير مثل انك تقدر تشغل 20 توكانات ف الكود ده
@@ -39,18 +39,266 @@ const client19 = new Discord.Client(); // كههربا (حسن ياسر)
 const client20 = new Discord.Client();
  // كههربا (حسن ياسر)
 const help = (`**
-       \`\`\`  Main Commands  :   \`\`\`\``)
- // 
+       \`\`\`  Main Commands  :   \`\`\`
+                  
+- ${config.prefix}spam on - لتشغيل الاسبام 
+         
+- ${config.prefix}spam off - لايقاف الاسبام
+         
+- ${config.groupnm}[NumberACC] - لاستخدام امر تحويل الفلوس (Say CODE)
+
+- ${config.prefix}react - لضافة ريأكت علي اي رسالة
+         
+- ${config.prefix}stayvoice - لتثبيت الحسابات في روم صوتي
+
+- ${config.prefix}randomava - لضافة صورة عشوائي لكل حساب
+         
+- ${config.prefix}join [LINK INVITE] - لـ اضافة الحسابات في اي سيرفر 
+
+- ${config.prefix}friend [ID USER] - لـ ارسال طلبات صداقة بـ الحسابات
+
+- ${config.prefix}dly - لجمع المرتب اليومي من جميع الحسابات 
+
+- ${config.prefix}prof - لظهار جميع معلومات الحسابات في البروبوت
+
+- ${config.prefix}cc - لظهار رصيد الحسابات في البروبوت
+
+         \`\`\` Admin Commands : \`\`\` 
+                  
+- ${config.prefix}setownerID [ID NEW OWNER] - لـ تغير ايدي الصاحب
+                  
+- ${config.prefix}setserverID [ID SERVER SPAM] - لـ تحديد سيرفر الاسبام
+                  
+- ${config.prefix}setchannelID [ID CHANNEL SPAM] - لـ تحديد روم الاسبام
+                  
+- ${config.prefix}settimeSpam [TIME SPAM] - لتحديد سرعة الاسبام
+                  
+- ${config.prefix}settimeStop [TIME STOP SPAM] - لتحديد مدة توقف الاسبام بعد تشغيلة
+                  
+- ${config.prefix}reload - لـ اعادة تشغيل البوت  بعد تغير بيانات JSON (مهم جدا بعد م تستخدم اوامر الادمن)
+
+         
+**`)
+ // كههربا (حسن ياسر)
 
 const err = (`** \`\`\`  [ERORR] : لازم تسوي رتبة بـ اسم  \`\`\`
          \`\` Role.Kahrbaa \`\` **`)
 
+// ======= [ settings JSON   ] ======== //
+const dinfo = JSON.parse(fs.readFileSync("./data.json", "UTF8"));
+client.on("message", async msg => {
+    if(!msg.guild) return;
+    if(msg.author.bot) return;
+if(!dinfo) dinfo = { // جمــيع الحقوق محفوظة لدي "Kahrbaa"
+        owner: config.kahrbaaid ,
+        serverid: "NONE" ,
+        channelid : "NONE" , // كههربا (حسن ياسر)
+        timespam : "NONE" ,
+        timestop : "NONE"
+    } 
+    if(msg.content.startsWith(config.prefix + "setownerID")){ // كههربا (حسن ياسر)
+          if (msg.channel.type == 'dm') // جمــيع الحقوق محفوظة لدي "Kahrbaa"
+            return msg.reply("** لا تستيطع استخدام الامر علي الخاص .. **");
+            if (!dinfo.owner.includes(msg.author.id)) return; 
+        let args = msg.content.split(' ').slice(1).join(' ');
+            if (!args) return msg.channel.send("**قم بوضع ايدي **");
+            if (args.length > 18 || args.length <= 17) { return msg.channel.send("** تـأكد من ايدي  **"); }
+            if (isNaN(args)) return msg.channel.send("**__الارقام فقط__!**");
+        dinfo.owner = args
+    await msg.reply(`** __ تم وضع ايدي جديد لصاحب التوكانات __  \`${args}\`**`).then(m => m.delete(5000));
+                    fs.writeFile("./data.json", JSON.stringify(dinfo), function(a) {
+        if (a) throw a;
+    })
+    await cmd.run("refresh")
+    }
+    if(msg.content.startsWith(config.prefix + "setserverID")){
+          if (msg.channel.type == 'dm') // جمــيع الحقوق محفوظة لدي "Kahrbaa"
+            return msg.reply("** لا تستيطع استخدام الامر علي الخاص .. **");
+            if (!dinfo.owner.includes(msg.author.id)) return; 
+        let args = msg.content.split(' ').slice(1).join(' ');
+            if (!args) return msg.channel.send("**قم بوضع ايدي **");
+            if (args.length > 18 || args.length <= 17) { return msg.channel.send("** تـأكد من ايدي  **"); }
+            if (isNaN(args)) return msg.channel.send("**__الارقام فقط__!**"); // جمــيع الحقوق محفوظة لدي "Kahrbaa"
+        dinfo.serverid = args
+    await msg.reply(`** __ تم وضع ايدي جديد لسيرفر الاسبام __  \`${args}\`**`).then(m => m.delete(5000));
+                    fs.writeFile("./data.json", JSON.stringify(dinfo), function(a) {
+        if (a) throw a;
+    })
+    }
+    if(msg.content.startsWith(config.prefix + "setchannelID")){
+          if (msg.channel.type == 'dm')
+            return msg.reply("** لا تستيطع استخدام الامر علي الخاص .. **");
+            if (!dinfo.owner.includes(msg.author.id)) return; 
+        let args = msg.content.split(' ').slice(1).join(' ');
+            if (!args) return msg.channel.send("**قم بوضع ايدي **");
+            if (args.length > 18 || args.length <= 17) { return msg.channel.send("** تـأكد من ايدي  **"); }
+            if (isNaN(args)) return msg.channel.send("**__الارقام فقط__!**");
+        dinfo.channelid = args
+    await msg.reply(`** __ تم وضع ايدي جديد لروم الاسبام __  \`${args}\`**`).then(m => m.delete(5000));
+                    fs.writeFile("./data.json", JSON.stringify(dinfo), function(a) {
+        if (a) throw a;
+    })
+    }
+    if(msg.content.startsWith(config.prefix + "settimeSpam")){ // جمــيع الحقوق محفوظة لدي "Kahrbaa"
+          if (msg.channel.type == 'dm')
+            return msg.reply("** لا تستيطع استخدام الامر علي الخاص .. **");
+            if (!dinfo.owner.includes(msg.author.id)) return; 
+        let args = msg.content.split(' ').slice(1).join(' ');
+            if (!args) return msg.channel.send("**قم بوضع وقت الاسبام بـ الثواني **");
+            if (isNaN(args)) return msg.channel.send("**__الارقام فقط__!**"); // جمــيع الحقوق محفوظة لدي "Kahrbaa"
+        dinfo.timespam = args
+    await msg.reply(`** __ تم اضافة مدة ارسال الاسبام ب الثواني __  \`${args}\`**`).then(m => m.delete(5000));
+                    fs.writeFile("./data.json", JSON.stringify(dinfo), function(a) {
+        if (a) throw a;
+    })
+    }
+    if(msg.content.startsWith(config.prefix + "settimeStop")){ // جمــيع الحقوق محفوظة لدي "Kahrbaa"
+          if (msg.channel.type == 'dm')
+            return msg.reply("** لا تستيطع استخدام الامر علي الخاص .. **");
+            if (!dinfo.owner.includes(msg.author.id)) return; 
+        let args = msg.content.split(' ').slice(1).join(' ');
+            if (!args) return msg.channel.send("** قم بوضع وقت توقف البوت بعد بداء الاسبام بـ الساعات **");
+            if (isNaN(args)) return msg.channel.send("**__الارقام فقط__!**"); // جمــيع الحقوق محفوظة لدي "Kahrbaa"
+        dinfo.timestop = args
+    await msg.reply(`** __ تم اضافة مدة توقف الاسبام بـ الساعات  __  \`${args}\`**`).then(m => m.delete(5000));
+                    fs.writeFile("./data.json", JSON.stringify(dinfo), function(a) {
+        if (a) throw a;
+    })
+    }
+}); // جمــيع الحقوق محفوظة لدي "Kahrbaa"
+
+client.on("message", async message => {
+if(message.content === prefix + "reset") {
+      if (!dinfo.owner.includes(message.author.id)) return; // جمــيع الحقوق محفوظة لدي "Kahrbaa"
+          dinfo.serverid = "NONE"
+          dinfo.channelid = "NONE"
+          dinfo.timespam = "NONE" // جمــيع الحقوق محفوظة لدي "Kahrbaa"
+          dinfo.timestop = "NONE"
+          message.channel.send(`**⚠️ restsettings , <@${dinfo.owner}>**`);
+          fs.writeFile("./data.json", JSON.stringify(dinfo), function(a) {
+        if (a) throw a;
+							  })
+    await cmd.run("refresh") // جمــيع الحقوق محفوظة لدي "Kahrbaa"
+    }});
 
 
-///////////
+// ======= [ settings JSON - END   ] ======== //
 
 
+ // جمــيع الحقوق محفوظة لدي "Kahrbaa"
+// ======= [ Reload JSON   ] ======== //
+client.on("message", async message => {
+  if(message.author.id !== dinfo.owner ) return;
+  if(message.content === config.prefix + "reload") {
+    await cmd.run("refresh")
+    await message.channel.send("Done,")
+  }
+})
+// ======= [ Reload JSON - END   ] ======== //
 
+
+ // جمــيع الحقوق محفوظة لدي "Kahrbaa"
+// ======= [ Console LOG    ] ======== //
+client.on('ready', () => {
+  console.log(`[Kahrbaa] : الحساب رقم واحد يعمل`);
+  console.log(`Hi ${client.user.tag} , This Code by : Kahrbaa `);
+  console.log(`i Have  [ " ${client.guilds.size} " ]`);
+}); // جمــيع الحقوق محفوظة لدي "Kahrbaa"
+client2.on('ready', () => {
+  console.log(`[Kahrbaa] : الحساب رقم اثنين يعمل `);
+  console.log(`Hi ${client2.user.tag} , This Code by : Kahrbaa `);
+  console.log(`i Have  [ " ${client2.guilds.size} " ]`); // جمــيع الحقوق محفوظة لدي "Kahrbaa"
+});
+client3.on('ready', () => {
+  console.log(`[Kahrbaa] : الحساب رقم 3 يعمل`);
+  console.log(`Hi ${client3.user.tag} , This Code by : Kahrbaa `);
+  console.log(`i Have  [ " ${client3.guilds.size} " ]`);
+});
+client4.on('ready', () => {
+  console.log(`[Kahrbaa] : الحساب رقم 4 يعمل`);
+  console.log(`Hi ${client4.user.tag} , This Code by : Kahrbaa `);
+  console.log(`i Have  [ " ${client4.guilds.size} " ]`);
+});
+client5.on('ready', () => {
+  console.log(`[Kahrbaa] : الحساب رقم 5 يعمل`);
+  console.log(`Hi ${client5.user.tag} , This Code by : Kahrbaa `);
+  console.log(`i Have  [ " ${client5.guilds.size} " ]`);
+});
+client6.on('ready', () => {
+  console.log(`[Kahrbaa] : الحساب رقم 6 يعمل`);
+  console.log(`Hi ${client6.user.tag} , This Code by : Kahrbaa `);
+  console.log(`i Have  [ " ${client6.guilds.size} " ]`);
+});
+client7.on('ready', () => {
+  console.log(`[Kahrbaa] : الحساب رقم 7 يعمل`);
+  console.log(`Hi ${client7.user.tag} , This Code by : Kahrbaa `);
+  console.log(`i Have  [ " ${client7.guilds.size} " ]`);
+});
+client8.on('ready', () => {
+  console.log(`[Kahrbaa] : الحساب رقم 8 يعمل`);
+  console.log(`Hi ${client8.user.tag} , This Code by : Kahrbaa `);
+  console.log(`i Have  [ " ${client8.guilds.size} " ]`);
+});
+client9.on('ready', () => {
+  console.log(`[Kahrbaa] : الحساب رقم 9 يعمل`);
+  console.log(`Hi ${client9.user.tag} , This Code by : Kahrbaa `);
+  console.log(`i Have  [ " ${client9.guilds.size} " ]`);
+});
+client10.on('ready', () => {
+  console.log(`[Kahrbaa] : الحساب رقم 10 يعمل`);
+  console.log(`Hi ${client10.user.tag} , This Code by : Kahrbaa `);
+  console.log(`i Have  [ " ${client10.guilds.size} " ]`);
+});
+client11.on('ready', () => {
+  console.log(`[Kahrbaa] : الحساب رقم 11 يعمل`);
+  console.log(`Hi ${client11.user.tag} , This Code by : Kahrbaa `);
+  console.log(`i Have  [ " ${client11.guilds.size} " ]`);
+});
+client12.on('ready', () => {
+  console.log(`[Kahrbaa] : الحساب رقم 12 يعمل`);
+  console.log(`Hi ${client12.user.tag} , This Code by : Kahrbaa `);
+  console.log(`i Have  [ " ${client12.guilds.size} " ]`);
+});
+client13.on('ready', () => {
+  console.log(`[Kahrbaa] : الحساب رقم 13 يعمل`);
+  console.log(`Hi ${client13.user.tag} , This Code by : Kahrbaa `);
+  console.log(`i Have  [ " ${client13.guilds.size} " ]`);
+});
+client14.on('ready', () => {
+  console.log(`[Kahrbaa] : الحساب رقم 14 يعمل`);
+  console.log(`Hi ${client14.user.tag} , This Code by : Kahrbaa `);
+  console.log(`i Have  [ " ${client14.guilds.size} " ]`);
+});
+client15.on('ready', () => {
+  console.log(`[Kahrbaa] : الحساب رقم 15 يعمل`);
+  console.log(`Hi ${client15.user.tag} , This Code by : Kahrbaa `);
+  console.log(`i Have  [ " ${client15.guilds.size} " ]`);
+});
+client16.on('ready', () => {
+  console.log(`[Kahrbaa] : الحساب رقم 16 يعمل`);
+  console.log(`Hi ${client16.user.tag} , This Code by : Kahrbaa `);
+  console.log(`i Have  [ " ${client16.guilds.size} " ]`);
+});
+client17.on('ready', () => {
+  console.log(`[Kahrbaa] : الحساب رقم 17 يعمل`);
+  console.log(`Hi ${client17.user.tag} , This Code by : Kahrbaa `);
+  console.log(`i Have  [ " ${client17.guilds.size} " ]`);
+});
+client18.on('ready', () => {
+  console.log(`[Kahrbaa] : الحساب رقم 18 يعمل`);
+  console.log(`Hi ${client18.user.tag} , This Code by : Kahrbaa `);
+  console.log(`i Have  [ " ${client18.guilds.size} " ]`);
+});
+client19.on('ready', () => {
+  console.log(`[Kahrbaa] : الحساب رقم 19 يعمل`);
+  console.log(`Hi ${client19.user.tag} , This Code by : Kahrbaa `);
+  console.log(`i Have  [ " ${client19.guilds.size} " ]`);
+});
+client20.on('ready', () => {
+  console.log(`[Kahrbaa] : الحساب رقم 20 يعمل`);
+  console.log(`Hi ${client20.user.tag} , This Code by : Kahrbaa `);
+  console.log(`i Have  [ " ${client20.guilds.size} " ]`);
+});
 // ==== [مهم جدااا ] ==== //
 const KahDEV = require("request");
 const invitecode = config.invite 
@@ -2442,4 +2690,4 @@ client16.login(process.env.KahTOKEN16);
 client17.login(process.env.KahTOKEN17);
 client18.login(process.env.KahTOKEN18);
 client19.login(process.env.KahTOKEN19);
-client20.login(process.env.KahTOKEN2);
+client20.login(process.env.KahTOKEN20);
